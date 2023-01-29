@@ -1,0 +1,35 @@
+a {
+	color: red;
+}
+
+h1,h2 {
+	color: blue;
+}
+h3,h4,h5 {
+	color: green;
+}
+
+.boxtwo_text {
+	color: grey;
+}
+
+.boxtwo_list {
+	color: brown;
+}
+
+.boxthree > ol {
+	color: aqua;
+}
+
+.boxthree_text {
+	color:rgb(239, 141, 13);
+}
+
+.boxfour_text,
+.boxfive_text {
+	color: purple;
+}
+
+.boxfive_marklist {
+	color:blueviolet;
+}
