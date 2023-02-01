@@ -1,0 +1,79 @@
+
+ /*@import url("reset.css"); */
+
+ /* Підключені шрифти - Russo One, Prata, Merriweather,Lobster  */
+
+
+@import url(https://fonts.googleapis.com/css?family=Lobster:regular&display=swap);
+
+body {
+    font-family: "Lobster", serif;
+    font-size: 20px;
+    line-height: 1.4;
+    
+}
+
+h1 { font-family: "Russo One";
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+    text-shadow: 5px 5px 5px yellow;
+}
+
+
+
+
+
+.chapterone_foto,
+.chapterfour_foto,
+.chapterfive_foto
+ {
+    text-align: center;
+} 
+
+
+
+
+.chapterone_contentbox {
+    font-style: italic;
+    font-size: 20px;
+    font-family: "Russo One";
+    
+}
+
+.chapterone_content {
+    font-size: 25px;
+    text-transform: uppercase;
+    
+}
+
+
+
+.chapterone_contentbox >p>a {
+    text-decoration: none;
+}
+
+
+h2 {
+    font-family: "Prata";
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    
+   
+}
+
+.chaptertwo_foto {
+    text-align: center;
+}
+
+.chaptertwo > p {
+    font-family:"Merriweather";
+    font-size: 20px;
+    color: red;
+    
+
+
+}
+
