@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    
+	font-family: "Poppins";
+	font-weight: 300;
+	width: 1420px;
+	background: #E5E5E5;
+}
+
+
+
+
+.textbox {
+	margin: 15px 312px 40px 312px;
+	font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6C757D;
+}
+
+.textbox > p {
+	margin-bottom: 20px;
+}
+
+h1 {
+	margin-bottom: 40px;
+	font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    color: #212529;
+
+}
+
+.blokimg {
+	margin: 80px 100px;
+}
+
+.texbox_two  {
+	margin: 80px 312px;
+	
+}
+
+.texbox_two > p {
+	font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6C757D;
+	margin-bottom: 20px;
+
+}
+
+h2 {
+	margin-bottom:40px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 40px;
+	color: #212529;
+
+}
+
+.igmblok {
+	
+	text-align: center;
+	margin-bottom: 80px;
+	
+	
+	
+}
+
+.img_boart {
+	margin-right: 20px;
+	
+}
+
+.last_textblock > p {
+	font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6C757D;
+
+}
+
+.last_textblock {
+	margin: 80px 312px;
+}
+
+
+
