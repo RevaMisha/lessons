@@ -1,0 +1,217 @@
+@import url("reset.css");
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    
+	font-family: "Poppins";
+	font-weight: 300;
+	background: #E5E5E5;
+    font-size: 14px;
+    
+}
+
+[class*="_container"]{
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+
+.paragraph_container{
+   
+    
+
+}
+
+.paragraf_content {
+    max-width: 840px;
+    margin: 80px auto;
+    
+   
+   
+
+}
+
+.first_row {
+    margin-top: 80px;
+    margin-bottom: 15px;
+    
+    
+}
+
+.first_row__normal {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.first_row__stail {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+h1,h2 {
+	margin-bottom: 40px;
+	font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #212529;
+
+}
+
+.site_text {
+    color: #6C757D;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+
+
+.oneimg,
+.img_boart,
+.img_paradais
+{
+    max-width: 100%;
+}
+
+.two_img {
+    font-size: 0;
+}
+
+.img_boart {
+    margin-right: 30px;
+}
+
+
+.thre_img { 
+   max-width: 100%;
+   margin: 0 auto ;
+}
+
+.proba {
+    border: 2px solid black;
+}
+
+.control1 {
+    padding: 15px;
+}
+
+.proba2 {
+    border: 4px solid #A9A9A9;
+    border-radius: 20px;
+}
+
+.cartun_men,
+.cartun_woomen,
+.cartun_children,
+.img_9 {
+    max-width: 100%;
+    
+}
+
+
+
+.box_imgthre {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 0;
+}
+
+
+
+.cartun_men{
+    box-shadow: 5px 3px 6px #6C757D;
+    margin-right: 30px;
+   
+    
+}
+
+.cartun_woomen {
+    margin-right: 30px;
+    box-shadow: 5px 3px 6px #6C757D;
+
+}
+
+.cartun_children {
+    box-shadow: 5px 3px 6px #6C757D;
+
+
+}
+
+.img_9 {
+    margin-bottom: 40px ;
+    box-shadow: 3px 3px 4px  #6C757D ;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    border: 2px solid #212529;
+    margin: 50px auto;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px 60px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 4px 4px 1px #555658;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
