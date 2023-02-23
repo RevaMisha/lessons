@@ -1,0 +1,316 @@
+@import url("reset.css");
+
+body { font-family: 'Poppins', 'Inter', sans-serif;
+	   
+	
+	   
+}
+
+.header {
+	background: url("../img/bluefon.jpg")no-repeat fixed;
+     max-width: 100%;
+	 min-height: 600px;
+	 margin-bottom: 50px;
+
+}
+
+
+
+[ class*="_container"] {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+[ class*="_cont"] {
+	max-width: 1170px;
+	margin: 0 auto 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+
+}
+
+.fon_text {
+	padding-top: 330px ;
+}
+
+.text_one, .text_three {
+	color: #E5E5E5;
+	font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+	margin-bottom: 15px;
+}
+
+.text_three {
+	margin-bottom: 100px;
+}
+
+
+.text_two {
+	color: #F8F9FA;
+	font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+	margin-bottom: 15px;
+
+}
+
+
+
+
+.icons_box {
+	font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+	color: #637381;
+	margin-bottom: 50px;
+	
+	
+}
+
+.second_row {
+	
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	flex-wrap:wrap ;
+ 
+ }
+
+ 
+.first_row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap ;
+ 
+	
+	
+}
+
+h1, h2 { 
+	
+	font-family: 'Inter';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.1;
+	margin-bottom: 50px;
+	color: black;
+
+}
+
+li {
+	margin-bottom: 20px;
+	
+ }
+
+.blupoint li::before { 
+	content: "";
+	background: url("../img/icons/Point.svg") 0 10px no-repeat;
+	width: 20px;
+	height: 20px;
+	display:inline-block;
+	margin-left: 20px;
+	
+ }
+
+ 
+
+ .icon_blucircle li::before { 
+	content: "";
+	background: url("../img/icons/circle_blue.svg") 0px 2px no-repeat;
+	width: 21.5px;
+	height: 21.5px;
+	display:inline-block;
+	margin-right: 10px;
+	padding-bottom: 20px;
+
+
+ }
+
+ .icon_greencircle li::before { 
+	content: "";
+	background: url("../img/icons/green-circle.svg") 0 0px no-repeat;
+	width: 19.5px;
+	height: 19.5px;
+	display:inline-block; 
+	margin-right: 10px; 
+
+ } 
+
+ .icon_redcircle ::before { 
+	content: "";
+	background: url("../img/icons/red-cross.svg") 0 0px no-repeat;
+	width: 19.5px;
+	height: 19.5px;
+	display:inline-block; 
+	margin-right: 10px; 
+}
+
+.blu_stick ::before { 
+	content: "";
+	background: url("../img/icons/stock-blue.svg") 0 4px no-repeat;
+	width: 19.5px;
+	height: 19.5px;
+	display:inline-block; 
+	margin-right: 10px; 
+}
+
+.icon_star ::before  { 
+	content: "";
+	background: url("../img/icons/star.svg") 0 2px no-repeat;
+	width: 19.5px;
+	height: 19.5px;
+	display:inline-block; 
+	margin-right: 10px; 
+}
+
+.block_tree_cont {
+	background-color: #46697d ;
+	padding: 20px 30px;
+    margin-bottom: 50px;
+	border-radius: 30px ;
+}
+
+
+.block_tree_cont p {
+	margin-bottom: 20px;
+	font-family: 'Inter';
+	font-weight: 500;
+	color: white;
+	line-height: 1.4;
+}
+
+h2 {
+	padding-top:40px ;
+}
+
+ 
+p :nth-child(2) {
+	color: black;
+
+}
+
+
+
+
+.block_tree_cont p:nth-child(2) {
+	color:black;
+}
+
+
+
+.block_four_cont {
+    background-color: #868c8f;
+	border-radius: 35px 5px;
+	
+}
+
+.text_block_foure {
+	padding: 40px 20px;
+}
+
+.text_block_foure p {
+	padding-bottom: 20px;
+}
+
+.text_block_foure p:nth-child(odd) {
+	font-family: 'Inter';
+	color: #E5E5E5;
+
+	
+}
+
+.boton,
+.boton_box {
+	
+	max-width: 170px;
+	height: 50px;
+	border: 1px solid black;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 16px;
+	font-weight: 700;
+	background-color: #2292d1;
+	color: white;
+	margin-top: 40px;
+	margin-bottom:20px ;
+	text-transform: uppercase;
+}
+
+.boton:hover {
+	background-color: red;
+	color: aliceblue;
+}
+
+.boton_box:hover {
+	background-color: white;
+	color: rgb(13, 127, 227);
+}
+
+.boton_box:active {
+	background-color: yellow;
+	color: green;
+}
+
+.three-blox_cont {
+	display: flex;
+	justify-content: space-between;
+	
+
+}
+
+.three-blox_cont p {
+	font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+
+.box-one, 
+.box-two,
+.box-three {
+	
+	background-color: #0e9aea;
+	color: #F8F9FA;
+	width: 33.3%;
+	padding: 20px 30px;
+	margin-right: 20px;
+	
+}
+
+.title-box {
+	text-align: center;
+}
+
+.foot {
+    max-width: 100%;
+	height: 20%;
+	background-color: #446377;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
