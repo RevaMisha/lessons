@@ -1,0 +1,121 @@
+@import url("reset.css");
+
+
+
+
+.wrapper {
+     min-height: 100%;
+     overflow: hidden;
+}
+
+.page-content__container
+{ max-width: 1270px; 
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px 
+}
+
+
+.page-content__cards-box {
+    margin-top: 170px;
+    
+    
+}
+
+
+
+.page-content__cards-box_first-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 45px;
+
+
+    
+}
+
+.page-content__cards-box_last-row {
+    margin-bottom: 60px;
+}
+
+.page-content_card-foto {
+    max-width: 393px;
+    margin-bottom: 30px;
+}
+
+.page-content__text {
+    
+    font-family: 'Poppins' ;
+    
+    
+}
+
+.page-content__card-data {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #495057;
+
+}
+
+.page-conteiner__card-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #212529;
+
+}
+
+.page-content__cart-description {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #495057;
+    margin-bottom: 30px;
+
+}
+
+.page-content__cart-avtor {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #495057;
+    
+
+
+}
+
+
+.page-content__cards-box_last-row {
+    
+    display: flex;
+    gap: 30px;
+
+}
+
+.page-content__battun {
+
+
+    width:178px ;
+    height:40px ;
+    background: #212529;
+    border-radius: 3px;
+    color: #F8F9FA;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.1;
+    text-align: center;
+    padding-top: 8px;
+    margin: 0 auto;
+
+   
+}
+
+.page-content__battun {
+    margin-bottom: 100px;
+}
+
+  
+
