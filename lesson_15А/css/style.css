@@ -1,0 +1,171 @@
+
+
+@import url(reset.css); 
+
+.body {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.site-content__container {
+	max-width: 1230px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.site-content__top-decoration {
+	padding: 50px 0px;
+	display: flex;
+}
+
+.site-content__top-text {
+	font-family: 'Poppins';
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.site-content__line {
+	padding-left: 26px;
+}
+
+.site-content__gallery-box {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	flex-wrap: wrap;
+}
+
+.site-content__picte {
+	max-width: 100%;
+	
+}
+
+.site-cotent__all-text {
+	max-width: 334px;
+	margin-top: 100px;
+}
+
+.site-content__title {
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4;
+	padding-bottom: 20px;
+
+
+}
+
+.site-content__discription {
+	color: #9C9C9C;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+.site-content__title-block {
+	margin: 191px 0px 0px 0;
+	text-align: center;
+}
+
+.site-content__top-title {
+	font-family: 'Poppins';
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.4;
+	padding-bottom: 40px;
+
+
+}
+.site-content__sab-title {
+	margin: 0 auto;
+	padding-bottom: 53px;
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+	
+
+}
+
+.site-content__top-foto {
+	padding-bottom: 100px;
+	
+}
+
+.site-content__foto-top {
+
+}
+
+.site-content__articles-group {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 82px;
+	flex-wrap: wrap;
+}
+
+.site-content__smol-article {
+	flex: 0 1 584px;
+	column-gap: 32px;
+	
+}
+.site-content__smol-article_title {
+	padding-bottom: 24px;
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4;
+	color:#333333;
+}
+
+.site-content__text-part {
+	padding-bottom: 30px;
+}
+
+.site-content__smol-article_text {
+	color: #9C9C9C;
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.4;
+
+
+}
+
+.site-content__another-text {
+	padding-top: 60px;
+	display: flex;
+	gap: 80px;
+}
+
+.site-content__img-row_top {
+	display: flex;
+	justify-content: space-between;
+	row-gap: 32px;
+	flex-wrap: wrap;
+	padding-bottom: 32px;
+}
+
+.site-content__img-top 
+.site-content__foto-top {
+	max-width: 100%;
+}
+
+.site-content__img-row_middle {
+	padding-bottom: 32px;
+	
+}
+
+.site-content__img-middle {
+	max-width: 100%;
+}
+
+.site-content__img-row_bottom {
+	display: flex;
+	justify-content: space-between;
+	row-gap: 32px;
+	flex-wrap: wrap;
+	padding-bottom: 32px;
+
+}
