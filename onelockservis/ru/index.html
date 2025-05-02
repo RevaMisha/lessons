@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Мовні теги -->
+    <link rel="alternate" hreflang="uk" href="https://example.com/ua/">
+    <link rel="alternate" hreflang="en" href="https://example.com/en/">
+    <link rel="alternate" hreflang="ru" href="https://example.com/ru/">
+    <link rel="alternate" hreflang="x-default" href="https://example.com/ua/">
+
+    <!-- Фавікон -->
+    <link rel="icon" href="../img/logo/Fav.svg">
+
+    <!-- Тайтл -->
+    <title>Аварийное открытие замков в Городе без повреждений от Компании.</title> 
+
+    <!-- Дескріпшен -->
+    <meta name="description" 
+          content="Осуществляем в [Название города] открытие замков всех типов без повреждений. 
+          Открываем двери квартир, гаражей, коммерческих помещений, сейфов, банковских хранилища, 
+          замки автомобилей.">
+    
+
+    <!-- Шрифт Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Слайдер Swiper -->
+    <link rel="stylesheet" href="../swiper/swiper-bundle.min.css">
+    <script src="../swiper/swiper-bundle.min.js" defer></script>
+
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Хедер -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo-box">
+                    <img class="header__logo-img" src="../img/logo/LG.svg" alt="Логотип компании">
+                </div>
+
+                <div class="header__navigation-block">
+                    <div class="header__navigation-list menu">
+                        <div class="menu-body">
+                            <ul class="menu__items">
+                                <li class="menu__list">
+                                    <a href="#" class="menu__list-link">Главная</a>
+                                </li>
+                                <li class="menu__list">
+                                    <span class="menu__list-name">Аварийное вскрытие</span>
+                                    <span class="header__errow">
+                                        <img class="header__errow-img" src="../img/icon/arrow-back.svg" alt="">
+                                    </span>
+                                    <div class="menu__down">
+                                        <ul class="menu__down-list">
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Открытие дверей</a>
+                                            </li>
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Открытие сейфов</a>
+                                            </li>
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Открытие авто</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__list">
+                                    <span class="menu__list-name">Изготовление ключей</span>
+                                    <span class="header__errow">
+                                        <img class="header__errow-img" src="../img/icon/arrow-back.svg" alt="">
+                                    </span>
+                                    <div class="menu__down dropdown">
+                                        <ul class="menu__down-list">
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Дублирование ключей</a>
+                                            </li>
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Копирование авто ключей</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__list">
+                                    <span class="menu__list-name">Ремонт</span>
+                                    <span class="header__errow">
+                                        <img class="header__errow-img" src="../img/icon/arrow-back.svg" alt="">
+                                    </span>
+                                    <div class="menu__down">
+                                        <ul class="menu__down-list">
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Ремонт замков</a>
+                                            </li>
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Ремонт авто замков</a>
+                                            </li>
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Ремонт замков зажигания</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__list">
+                                    <span class="menu__list-name">Язык RU</span>
+                                    <span class="header__errow">
+                                        <img class="header__errow-img" src="../img/icon/arrow-back.svg" alt="">
+                                    </span>
+                                    <div class="menu__down">
+                                        <ul class="menu__down-leng">
+                                            <li class="menu__down-item menu__down-item--leng">
+                                                <a href="../index.html" class="menu__down-link">UA</a>
+                                            </li>
+                                            <li class="menu__down-item menu__down-item--leng">
+                                                <a href="../en/index.html" class="menu__down-link">EN</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__contact-box">
+                    <img class="header__phone-icon" src="../img/icon/smartphone.svg" alt="">
+                    <a class="header__phone-link" href="tel:+380123456789">+38 (012) 345-67-89</a>
+                </div>
+
+                <!-- Бургер -->
+                <button class="menu-burger">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="swiper__box">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper__fone">
+                            <img src="../img/fon.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="sliders__container">
+                            <div class="slider__info-block">
+                                <div class="swiper__left-text">
+                                    <div class="swiper__box-title">
+                                        <h2 class="swiper__title">Вскрытие<br class="title__breac"> дверей</h2>
+                                    </div>
+                                    <p class="swiper__text">
+                                        Оказиваєм в Городе вскрытие замков всех типов без повреждений, установленных на дверях 
+                                        квартир, офисов, гаражей. После вскрытия замки остаются в рабочем 
+                                        состоянии, а фурнитура и дверь - целыми.
+                                    </p>
+                                    <div class="swiper__btn">
+                                        <a href="#" class="swiper__name-btn">Подробней</a>
+                                    </div>
+                                </div>
+                                <div class="swiper__right-foto">
+                                    <img class="swiper__foto-img" src="../img/Вскриття-дверей.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper__fone">
+                            <img src="../img/fon.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="sliders__container">
+                            <div class="slider__info-block">
+                                <div class="swiper__left-text">
+                                    <div class="swiper__box-title">
+                                        <h2 class="swiper__title">Вскрытие<br class="title__breac"> авто</h2>
+                                    </div>
+                                    <p class="swiper__text">
+                                        Аварийное открытие автомобилей в Городе любых марок, без повреждения
+                                        замков. После открытия, можем изготовить дубликат ключей по замку, 
+                                        прописать новый комплект ключей к вашему авто.
+                                        
+                                    </p>
+                                    <div class="swiper__btn">
+                                        <a href="#" class="swiper__name-btn">Подробней</a>
+                                    </div>
+                                </div>
+                                <div class="swiper__right-foto">
+                                    <img class="swiper__foto-img" src="../img/Вскриття-автомобілів.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper__fone">
+                            <img src="../img/fon.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="sliders__container">
+                            <div class="slider__info-block">
+                                <div class="swiper__left-text">
+                                    <div class="swiper__box-title">
+                                        <h2 class="swiper__title">Вскрытие<br class="title__breac"> сейфов</h2>
+                                    </div>
+                                    <p class="swiper__text">
+                                        Потеряли ключи, заклинил замок, забыли код. Открываем сейфы в Городе без повреждений 
+                                        с механическими, кодовыми и электронными замками. Можем заменить или 
+                                        перекодировать ваши замки и изготовить новые ключи.
+                                    </p>
+                                    <div class="swiper__btn">
+                                        <a href="#" class="swiper__name-btn">Подробней</a>
+                                    </div>
+                                </div>
+                                <div class="swiper__right-foto">
+                                    <img class="swiper__foto-img" src="../img/Вскриття-сейфів.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper__fone">
+                            <img src="../img/fon.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="sliders__container">
+                            <div class="slider__info-block">
+                                <div class="swiper__left-text">
+                                    <div class="swiper__box-title">
+                                        <h2 class="swiper__title">Нарезка<br class="title__breac"> ключей</h2>
+                                    </div>
+                                    <p class="swiper__text">
+                                        Изготовляем в Городе дубликаты ключей всех типов, как для квартирных замков, так и для автомобилей. 
+                                        Делаем ключи к сейфовым замкам любой сложности. Можем изготовить новые ключи по замку заказчика, 
+                                        любого типа.
+
+                                    </p>
+                                    <div class="swiper__btn">
+                                        <a href="#" class="swiper__name-btn">Подробней</a>
+                                    </div>
+                                </div>
+                                <div class="swiper__right-foto">
+                                    <img class="swiper__foto-img" src="../img/Виготовлення-дублікатів-ключів.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper__fone">
+                            <img src="../img/fon.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="sliders__container">
+                            <div class="slider__info-block">
+                                <div class="swiper__left-text">
+                                    <div class="swiper__box-title">
+                                        <h2 class="swiper__title">Ремонт<br class="title__breac"> замков</h2>
+                                    </div>
+                                    <p class="swiper__text">
+                                        Ремонтируем: квартирные, гаражные, сейфовые, автомобильные замки от разных производителей. 
+                                        Меняєм части механизма вышедшиє из строя. Перекодируем секреты, производим 
+                                        один ключ под несколько замков.
+                                    </p>
+                                    <div class="swiper__btn">
+                                        <a href="#" class="swiper__name-btn">Подробней</a>
+                                    </div>
+                                </div>
+                                <div class="swiper__right-foto">
+                                    <img class="swiper__foto-img" src="../img/Ремонт-замків.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper__fone">
+                            <img src="../img/fon.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="sliders__container">
+                            <div class="slider__info-block">
+                                <div class="swiper__left-text">
+                                    <div class="swiper__box-title">
+                                        <h2 class="swiper__title">Авто<br class="title__breac"> замки</h2>
+                                    </div>
+                                    <p class="swiper__text">
+                                        Разблокируем замки автозажигания в Городе. Производим ремонт сердцевин, заменяем секретную 
+                                        часть в автомобильных замках. Изготавливаем дубликаты по замку, меняем секреты 
+                                        замков автозажигания под новые ключи.
+                                    </p>
+                                    <div class="swiper__btn">
+                                        <a href="#" class="swiper__name-btn">Докладніше</a>
+                                    </div>
+                                </div>
+                                <div class="swiper__right-foto">
+                                    <img class="swiper__foto-img" src="../img/Ремонт-замків-запалювання.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Стрілки навігації -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- Дотси -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Про нас -->
+            <div class="about-us">
+                <div class="about-us__container">
+                    <div class="about-us__box-title">
+                        <h2 class="about-us__title anim-title">Сервис Название</h2>
+                    </div>
+                    <div class="about-us__block">
+                        <div class="about-us__carts-box">
+                            <div class="about-us__cart">
+                                <div class="about-us__inner-info">
+                                    <div class="about-us__title-cart">
+                                        <p class="about-us__name-cart">Начали</p>
+                                        <img class="about-us__icon-cart" src="../img/icon/Продаж-замків.svg" alt="">
+                                    </div>
+                                    <p class="about-us__text-cart">
+                                        В Городе обслуживанию замков, сейфов и дверной фурнитуры, в начале двухтысячных годов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-us__cart">
+                                <div class="about-us__inner-info">
+                                    <div class="about-us__title-cart">
+                                        <p class="about-us__name-cart">Дублируем</p>
+                                        <img class="about-us__icon-cart" src="../img/icon/Ремонт-замків.svg" alt="">
+                                    </div>
+                                    <p class="about-us__text-cart">
+                                        Квартирные, домофонные, сейфовые и автомобильные ключи любой сложности.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-us__cart">
+                                <div class="about-us__inner-info">
+                                    <div class="about-us__title-cart">
+                                        <p class="about-us__name-cart">Оказываем</p>
+                                        <img class="about-us__icon-cart" src="../img/icon/Відкриття-сейфів.svg" alt="">
+                                    </div>
+                                    <p class="about-us__text-cart">
+                                        Профессиональный ремонт и вскрытие дверных замков, сейфов, автомобилей.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-us__cart">
+                                <div class="about-us__inner-info">
+                                    <div class="about-us__title-cart">
+                                        <p class="about-us__name-cart">Ремонт</p>
+                                        <img class="about-us__icon-cart" src="../img/icon/Відкрити-замок.svg" alt="">
+                                    </div>
+                                    <p class="about-us__text-cart">
+                                      Авто и сейфовых замков от различных производителей, которые встречаются в стране.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-us__right-block">
+                            <div class="about-us__img-box">
+                                <img class="about-us__foto" src="../img/Магазин.jpg" alt="">
+                            </div>
+                            <div class="about-us__text-block">
+                                <p class="about-us__right-text">
+                                    Предоставляем полный спектр услуг по обслуживанию замков в ГОРОДЕ. 
+                                    Изготавливаем дубликаты ключей как для механических замков от квартир и сейфов,  
+                                    а также делаем копии автоключей с программированием и привязкой к автомобилю клиента.
+                                    А в случае утери ключей или поломки кодовых механизмов, предоставляем услуги по 
+                                    аварийному вскрытию замков и сейфов без каких-либо повреждений.
+                                    И при необходимости, можем провести замену, ремонт перекодировку 
+                                    замков и изготовить дубликаты ключей к ним.
+                                   
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Переваги -->
+            <div class="benefit">
+                <div class="benefit__container">
+                    <h2 class="benefit__title anim-title">Преимущества</h2>
+                </div>
+                <div class="benefit__content">
+                    <div class="benefit__left-fon">
+                        <img class="benefit__img-left" src="../img/left-fone.jpg" alt="">
+                        <img class="benefit__over-fone" src="../img/Сейф-відкрити.png" alt="">
+                    </div>
+                    <div class="benefit__info-items">
+                        <div class="benefit__item">
+                            <div class="benefit__inner-item">
+                                <p class="benefit__item-title">Открываем</p>
+                                <p class="benefit__text">
+                                    Замки и сейфы с высоким уровнем взломостойкости, которые не по силам нашим конкурентам.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="benefit__item">
+                            <div class="benefit__inner-item">
+                                <p class="benefit__item-title">Сотрудничаем</p>
+                                <p class="benefit__text">
+                                    С фин-учреждениями по обслуживанию
+                                    замков, хранилищ, сейфов и депозитных ячеек.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="benefit__item">
+                            <div class="benefit__inner-item">
+                                <p class="benefit__item-title">Постоянно</p>
+                                <p class="benefit__text">
+                                    Следим за новинками замочной продукции и 
+                                    разрабатываем к ним методы вскрытия.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="benefit__item">
+                            <div class="benefit__inner-item">
+                                <p class="benefit__item-title">Персонально</p>
+                                <p class="benefit__text">
+                                    Подбираем каждому клиенту замочные решения
+                                    для надёжной защиты его жилья или имущества.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefit__rigth-fon">
+                        <img class="benefit__img-rigth-fon" src="../img/right-fone.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Сервіс 1 -->
+            <div class="service">
+                <div class="service__container">
+                    <div class="service__box-title">
+                        <h1 class="service__text-title anim-title">Аварийное вскрытие замков в ГОРОДЕ</h1>
+                    </div>
+                    <p class="service__center-text">
+                        В течение 20 лет замочно-сервисная компания «Название» предоставляет услуги по вскрытию 
+                        дверей в ГОРОДЕ без повреждений. Мы специализируемся на вскрытии замков и сейфов с 
+                        «высокой степенью защиты от взлома». На сегодняшний день цена на хорошую замочную 
+                        продукцию довольно высока. Поэтому наш главный приоритет – открыть замок клиента 
+                        "в чистую". То есть, вскрывать, сохраняя их целостность и функциональность, при этом 
+                        не повреждая фурнитуру или дверные накладки. Что в дальнейшем избавляет владельцев от 
+                        дополнительных финансовых затрат.
+
+
+                        <span class="service__split-text">
+                            В ГОРОДЕ вскрытие замков мы осуществляем исключительно специализированным инструментом 
+                            через замочную скважину. После вскрытия нашим специалистом ваш замок остается в рабочем 
+                            состоянии и сохраняет свои защитные свойства.
+                        </span>
+                    </p>
+                    <div class="service__content-box">
+                        <div class="service__text-block">
+                            <h3 class="service__sub-title">Мы поможем вам в случаях когда:</h3>
+                            <ul>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    вы потеряли ключи от квартиры<span class="servise__del-ru">, или помещения</span>;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    замок заклинило<span class="servise__del-ru servise__del-ru--three"> и вы не можете открыть его ключом</span>;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    сломался ключ в замке<span class="servise__del-ru servise__del-ru--four"> и вы не можете попасть в квартиру</span>;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    в замке застрял ключ<span class="servise__del-ru"> при попытке открыть дверь</span>;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    замок заклинило<span class="servise__del-ru"> после попытки вандального взлома</span>;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    ключи от сейфа были утеряны;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    не получаєтся открыть сейф<span class="servise__del-ru"> родним ключом</span>;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    сейфовый ключь сломался<span class="servise__del-ru"> в замке во время открытия</span>;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    забыли код от сейфа<span class="servise__del-ru">, или замок не реагує на верный код</span>;
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="service__foto-block service__foto-block--lock">
+                            <img class="service__img" src="../img/Термінове-відкриття-дверей.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Продаж -->
+            <div class="product">
+                <div class="product__container-title">
+                    <h2 class="product__title-left anim-title">Замок это время</h2>
+                </div>
+                <div class="product__all-block">
+                    <div class="product__container">
+                        <div class="product__image-block">
+                            <img src="../img/Купити-замок.jpg" alt="" class="product__foto">
+                        </div>
+                        <div class="product__right-content">
+                            <div class="product__text-right">
+                                <p class="product__up-text">
+                                    Время, которое замок будет противодействовать злоумышленнику, защищая ваше имущество.
+                                </p>
+                                <p class="product__midle-text">Сервіс «Название» предлагает в ГОРОДЕ замки и защитную дверную 
+                                    фурнитуру с наивысшей степенью защиты от вандального и интеллектуального методов взлома 
+                                    от европейских компаний, лидеров по производству замочной продукции:
+                                    
+                                    <span class="product__color-text">Abloy, Tokoz, Evva,
+                                        Abus, Wilka, Dom, Mul-t-lock, Mottura, Cisa, Securemme
+                                        
+                                    </span>.
+                                </p>
+                                <p class="product__down-text"> 
+                                    У нас всегда в наличии есть сувальдные замки и цилиндровые механизмы (сердцевины), 
+                                    которые могут использоваться в основных и дополнительных замках, на дверях квартир, 
+                                    офисов, гаражей, складских помещений. А также у нас можно приобрести надежные навесные 
+                                    замки, замки для коммерческих грузов, вело-мото замки, а также замки для сейфов и 
+                                    депозитных ячеек. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Сервіс 2 -->
+            <div class="service">
+                <div class="service__container">
+                    <div class="service__box-title">
+                        <h2 class="service__text-title anim-title">Вскрытие автомобилей</h2>
+                    </div>
+                    <p class="service__center-text">
+                        Долгие годы мы предоставляем услуги в ГОРОДЕ по вскрытию автомобилей без повреждения.
+                        Мы вскрываем авто любых марок, независимо от их года выпуска или модели. Используя исключительно 
+                        специальный инструмент для манипуляции секретами авто замка, что позволяет полностью исключить любые 
+                        повреждения кузова, или царапин на краске и стекле вашей машины.
+
+                        <span class="service__split-text">
+                            После авто вскрытия, при необходимости можем заменить замки автомобиля и изготовить к ним нужное 
+                            количество дубликатов ключей, или сделать авто ключ по секретам замков вашей машины. Также можем 
+                            запрограммировать новый комплект автоключей, привязать новый комплект ключей к автомобилю, аннулировать 
+                            все предыдущие ключи. Разблокировать рулевую колонку и починить замок зажигания. Заменить механические 
+                            секреты замка  вышедшие из строя. 
+                        </span>
+                    </p>
+                    <div class="service__content-box">
+                        <div class="service__text-block">
+                            <h3 class="service__sub-title">Звоните нам если:</h3>
+                            <ul>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    захлопнули ключи внутри <span class="servise__сut-ru servise__сut-ru--one">своего</span> авто;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    машина не открывается<span class="servise__сut-ru"> родным ключом</span>;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    вы потеряли ключи<span class="servise__сut-ru"> от своего автомобиля</span>;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    авто ключи были украдены;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    у вас сломался ключ в замке<span class="servise__сut-ru"> автомобиля</span>;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    заклинил замок зажигания;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    авто замки были повреждены;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    заклинила рульова колонка;
+                                </li>
+                                <li class="service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    была попытка автоугона;
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="service__foto-block">
+                            <img class="service__img" src="../img/Відкриття-автомобіля.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map">
+                <div class="map__container">
+                    <div class="map__box-title">
+                        <h3 class="map__title anim-title">Наши контакты</h3>
+                    </div>
+                    <div class="map__block">
+                        <iframe class="map__box"
+                                title="Компанії на карте Города"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d643.2350615650622!2d24.02747462187419!3d49.8435802687347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1745330863712!5m2!1sru!2sua"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="map__shop-contact">
+                            <div class="map__logo-contact">
+                                <img class="map__img-contact" src="../img/logo/Lcolor.svg" alt="">
+                            </div>
+                            <div class="map__info-contact">
+                                <div class="map__left-cont">
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-smartphone.svg" alt="">
+                                            <p class="map__sub-title">Сервис Название</p>
+                                        </div>
+                                        <div class="map__text-info">
+                                            <a class="map__text" href="tel:+380961234567">+38 (096) 123-45-67</a>
+                                        </div>
+                                    </div>
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-mail.svg" alt="">
+                                            <p class="map__sub-title">Электронна почта</p>
+                                        </div>
+                                        <div class="map__text-info">
+                                            <a class="map__text" href="mailto:zverinalev@gmail.com">zverinalev@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-navigation.svg" alt="">
+                                            <p class="map__sub-title">Наш адрес</p>
+                                        </div>
+                                        <div class="map__text-info">
+                                            <p class="map__text">
+                                                г.Город ул.<span class="map__del-text">Название</span>Название 555
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="map__right-cont">
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-smartphone.svg" alt="">
+                                            <p class="map__sub-title">Вскрытие замков</p>
+                                        </div>
+                                        <div class="map__text-info">
+                                            <a class="map__text" href="tel:+380961234567">+38 (096) 123-45-67</a>
+                                        </div>
+                                    </div>
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-calendar.svg" alt="">
+                                            <p class="map__sub-title">График работы</p>
+                                        </div>
+                                        <div class="map__text-info">
+                                            <p class="map__text">
+                                                Пн-Пт выходной Сб-Вс
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-calendar.svg" alt="">
+                                            <p class="map__sub-title">Время работы</p>
+                                        </div>
+                                        <div class="map__time-info">
+                                            <p class="map__text">
+                                                C 10:00 до 19:00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Бокові соціалки -->
+            <div class="social">
+                <button class="social__write-us">
+                    <img class="social__img-write-us" src="../img/icon/Написати-нам.png" alt="">
+                </button>
+                <button class="social__close-btm">
+                    <img class="social__img-close" src="../img/icon/cross.png" alt="">
+                </button>
+                <div class="social__links">
+                    <a href="viber://chat?number=+380932443209">
+                        <img class="social__img-link" src="../img/icon/viber.png" alt="">
+                    </a>
+                    <a href="https://t.me/+380932443209">
+                        <img class="social__img-link" src="../img/icon/telegram.png" alt="">
+                    </a>
+                    <a href="https://wa.me/+380932443209">
+                        <img class="social__img-link" src="../img/icon/whatsapp.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="social__img-link" src="../img/icon/signal.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__all-info">
+                    <div class="footer__about-company">
+                        <img class="footer__logo-company" src="../img/logo/LG.svg" alt="">
+                        <div class="footer__inform-box">
+                            <p class="footer__text-company"> Название предлагает услуги:</p>
+                            <ul>
+                                <li class="footer__servict-list">вскрытие замков</li>
+                                <li class="footer__servict-list">вскрытие сейфов</li>
+                                <li class="footer__servict-list">вскрытие авто замков</li>
+                                <li class="footer__servict-list">изготовление ключей</li>
+                                <li class="footer__servict-list">ремонт замков</li>
+                                <li class="footer__servict-list">продажа замков </li>
+                                <li class="footer__servict-list">продаж сейфов</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__social-net">
+                        <p class="footer__name-social">Социальные сети</p>
+                        <div class="footer__social-box">
+                            <a href="viber://chat?number=+380932443209">
+                                <img class="footer__icon-social" src="../img/icon/viber.png" alt="">
+                            </a>
+                            <a href="https://t.me/+380932443209">
+                                <img class="footer__icon-social" src="../img/icon/telegram.png" alt="">
+                            </a>
+                            <a href="https://wa.me/+380932443209">
+                                <img class="footer__icon-social" src="../img/icon/whatsapp.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="footer__icon-social" src="../img/icon/signal.png" alt="">
+                            </a>
+                            <a href="https://www.facebook.com/vzaluzhnyi?locale=ru_RU">
+                                <img class="footer__icon-social" src="../img/icon/facebook.png" alt="">
+                            </a>
+                            <a href="https://www.youtube.com/@alexanderokunevskyy">
+                                <img class="footer__icon-social" src="../img/icon/youtube.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__contact-company">
+                        <p class="footer__name-cont">Контакты</p>
+                        <ul class="footer__list-contact">
+                            <li class="footer__item-list">
+                                <img class="footer__icon-contact" src="../img/icon/footer-smartphone.svg" alt="">
+                                <a class="footer__contact-text" href="tel:+380961234567">+38 (096) 123-45-67</a>
+                            </li>
+                            <li class="footer__item-list">
+                                <img class="footer__icon-contact" src="../img/icon/footer-mail.svg" alt="">
+                                <a class="footer__contact-text" href="mailto:zverinalev@gmail.com">zverinalev@gmail.com</a>
+                            </li>
+                            <li class="footer__item-list">
+                                <img class="footer__icon-contact" src="../img/icon/footer-navigation.svg" alt="">
+                                <span class="footer__contact-text">
+                                    м.Город ул.Название<span class="footer__row-text">Название 555</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__decoration-line">
+                    <span class="footer__line"></span>
+                    <p class="footer__autor">© 2025 ZverinaLev production</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Підключення JS -->
+    <script src="../js/script.js" defer></script>
+</body>
+</html>
