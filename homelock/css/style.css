@@ -11,17 +11,74 @@ body {
     position: relative;
 }
 
-/* Приховання h1
-.visually-hidden {
+/* Загальні для всіх*/
+
+
+.segment{
+ margin-bottom: 160px;
+}
+
+.box-title{
+    padding-bottom: 80px;
+}
+
+.big-title {
+    color: #101010;
+    font-family: "Bebas Neue Cyrillic";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+}
+
+
+
+.title{
+    color: #101010;
+    font-family: "Bebas Neue Cyrillic";
+    font-size: 64px;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+    
+}
+
+.sub-title {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+}
+
+.text-page{
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 180%;
+padding-bottom: 15px; 
+}
+
+.border-line{
+      border: 4px solid rgba(245, 117, 32, 1);
+      padding: 10px;
+      font-size: 17px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+}
+
+  
+.invisible{
     position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
+    margin: -1px;
     overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
     border: 0;
-  } */
+  } 
 
 
 /*-----Хедер-----*/
@@ -439,21 +496,14 @@ body {
 
 
 /*-----Про Нас-----*/
+
+
 .about-us {
     background-color: #F8F8F8;
 
 }
 
-.about-us__title {
-    color: #101010;
-    font-family: "Bebas Neue Cyrillic";
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 123%;
-    letter-spacing: 3.2px;
 
-}
 
 .about-us__block {
     display: flex;
@@ -462,10 +512,9 @@ body {
 }
 
 .about-us__box-title {
-    padding: 160px 0 80px 0;
+    padding-top: 160px;
     max-width: 370px;
 }
-
 
 .about-us__title-cart {
     display: flex;
@@ -554,21 +603,6 @@ body {
 
 /*-----Переваги-----*/
 
-.benefit {
-    margin: 160px 0;
-}
-
-.benefit__container {
-    padding-bottom: 80px;
-}
-
-.benefit__title {
-    font-family: "Bebas Neue Cyrillic";
-    font-size: 60px;
-    line-height: 123%;
-    letter-spacing: 3.2px;
-}
-
 .benefit__content {
     display: flex;
     gap: 40px;
@@ -651,22 +685,12 @@ body {
 
 /*-----Сервіс-----*/
 
-.service {
-    padding-bottom: 160px;
-}
+
 
 .service__box-title {
-    padding-bottom: 80px;
     text-align: center;
 }
 
-.service__text-title {
-    font-family: "Bebas Neue Cyrillic";
-    font-size: 60px;
-    line-height: 123%;
-    letter-spacing: 3.2px;
-
-}
 
 .service__content-box {
     display: flex;
@@ -691,15 +715,12 @@ body {
     padding-left: 40px;
 }
 
-.service__sub-title {
-    font-family: Inter;
+   .service__sub-title{
+    padding-bottom: 30px;
     font-size: 30px;
     font-weight: 500;
-    line-height: 160%;
-    letter-spacing: 0.2px;
-    padding-bottom: 30px;
-
-}
+    letter-spacing: 0.2px; 
+    }
 
 .service__list-text {
     font-family: Inter;
@@ -732,6 +753,10 @@ body {
     object-fit: cover;
 }
 
+.service__sub-title{
+    padding-bottom: 30px;
+}
+
 /*-----Анімація Тайтлів-----*/
 
 .anim-title {
@@ -747,23 +772,6 @@ body {
 
 
 /*-----Продаж-----*/
-.product {
-    margin: 0 0 160px 0;
-}
-
-.product__container-title {
-    padding-bottom: 80px;
-}
-
-.product__title-left {
-    font-family: "Bebas Neue Cyrillic";
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 123%;
-    letter-spacing: 3.2px;
-    color: black;
-
-}
 
 .product__all-block {
     max-width: 100%;
@@ -814,22 +822,6 @@ body {
 }
 
 /*-----Карта-----*/
-.map {
-    margin-bottom: 160px;
-}
-
-.map__box-title {
-    padding-bottom: 80px;
-}
-
-.map__title {
-    color: #101010;
-    font-family: "Bebas Neue Cyrillic";
-    font-size: 64px;
-    line-height: 123%;
-    /* 78.72px */
-    letter-spacing: 3.2px;
-}
 
 .map__block {
     display: flex;
@@ -837,8 +829,11 @@ body {
 }
 
 .map__box {
-    width: 580px;
-    height: 460px;
+  flex-basis: calc(50% - 30px); 
+  flex-grow: 1; 
+  flex-shrink: 1; 
+  height: 460px; 
+  min-width: 300px; 
 }
 
 .map__shop-contact {
@@ -847,7 +842,6 @@ body {
     max-width: 600px;
     width: 100%;
 }
-
 
 .map__logo-contact {
     text-align: center;
@@ -903,6 +897,8 @@ body {
 .map__img-logo {
     max-width: 200px;
 }
+
+
 
 
 /*-----Бокові соціалки-----*/
@@ -984,7 +980,7 @@ body {
 /* Застосовуємо анімацію до кожної іконки */
 .social__links.show .social__img-link {
     animation: appear 0.5s ease-in-out forwards;
-    /* 0.5s для плавності */
+    
 }
 
 /* Затримки для кожної іконки */
@@ -1056,8 +1052,6 @@ body {
     text-align: center;
 }
 
-
-
 .footer__icon-contact {
     width: 40px;
     padding-right: 10px;
@@ -1121,6 +1115,326 @@ body {
 .footer__icon-social:hover {
     transform: scale(1.2);
 }
+
+
+/*-----Сторінка Ремонт-----*/
+
+.baner-section {
+  width: 100%;
+  background-color: #000;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 105px;
+  
+}
+
+.baner-section__baner-box {
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    height: 14vw;
+    max-height: 280px;
+    min-height: 150px; 
+    overflow: hidden;
+}
+
+.baner-section__img-baner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    
+  }
+
+.darkness {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+.baner-section__container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; 
+  height: 100%; 
+  z-index: 2;
+  display: flex;
+  align-items: center; 
+}
+  
+.banner-title{
+ color: white;
+font-family: "Bebas Neue Cyrillic";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 123%; 
+letter-spacing: 3.2px;
+} 
+
+
+
+.first-section__title{
+    padding-top: 160px;
+}
+
+.first-section__main-foto{
+    max-width: 100%;
+    padding-bottom: 30px;
+    
+}
+
+.first-section__img-main {
+    border-radius: 10px;
+    width: 100%; 
+    display: block;
+    margin: 0 auto;
+}
+
+.first-section__color-squares{
+    padding-top: 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.first-section__left-square{
+    flex: 1 1 60%;
+    height: auto;
+    background-color:#F57520;
+    border-radius: 10px;
+}
+
+.first-section__rigth-square{
+    flex: 1 1 40%;
+    height: auto;
+    background-color:#2E2E2E;
+    border-radius: 10px; 
+
+}
+
+.first-section__left-text,
+.first-section__rigth-square{
+padding: 30px 30px;
+color:#FFF;
+font-family: Inter;
+font-size: 17px;
+font-style: normal;
+
+line-height: 160%; 
+letter-spacing: 0.18px;
+}
+
+.service-section__boxes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-section__item-box {
+    background-color: #F57520;
+    width: calc(25% - 15px); 
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+.service-section__item-box:hover {
+    transform: scale(1.05);
+}
+  
+.service-section__img-box {
+    padding: 15px 15px 0 15px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.service-section__box{
+    padding: 20px 0 30px 0;
+}
+
+.service-section__name{
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+}
+
+.selecting-color{
+    background-color: #F57520;;
+    padding: 30px;
+    color: #FFF;
+    font-size: 17px;
+     font-family: Inter;
+   border-radius: 10px;
+}
+
+
+.second-section__sub-title{
+    padding: 15px 0 30px 0;
+}
+
+.second-section__foto-container{
+   padding-bottom: 30px;
+    max-width: 100%;
+}
+
+.second-section__cartun-img{
+    width: 100%;
+    display: block;
+    border-radius: 10px
+}
+
+.second-section__foto-box{
+    display: flex;
+    gap: 20px;
+    padding: 15px 0 30px 0;
+}
+
+.second-section__img{
+    width: calc(50% - 15px); 
+    max-width: 620px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.second-section__combo-block{
+    display: flex;
+    gap: 20px;
+    padding: 0px 0 15px 0;
+    align-items: stretch;
+}
+
+.second-section__left{
+    flex: 1 1 45%; 
+    
+    padding-top: 20px;
+}
+
+.second-section__foto{
+    flex: 1 1 55%; 
+    max-width: 550px;
+    max-height: 400px;
+}
+
+.second-section__foto-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.article-section__sub-title{
+    padding: 15px 0 30px 0;
+}
+
+.article-section__foto{
+    max-width: 1280px;
+    height: auto;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.article-section__img-foto {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.article-section__box-fotos{
+    padding: 15px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.article-section__img-fotos{
+    width: calc(50% - 10px); 
+    max-width: 620px;
+    height: auto;
+    border-radius: 10px;
+  
+}
+
+.article-section__visual-bloc{
+    display: flex;
+    gap: 20px;
+    padding: 0px 0 15px 0;
+}
+
+.article-section__left-box{
+    flex: 1 1 50%;
+    max-width: 450px;
+    max-height: 380px;
+}
+
+.article-section__cartoon-left{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px
+}
+
+
+.article-section__rigth-box{
+    padding-top: 30px;
+    flex: 1 1 50%;
+}
+
+
+.last-section__content{
+    padding-bottom: 30px;
+}
+
+
+.last-section__visual-blok{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+
+.last-section__visual-left{
+    flex: 1 1 45%;
+    padding-top: 15px
+}
+
+.last-section__visual-left .last-section__text:last-child{
+     padding-bottom: 0;
+}
+
+.last-section__visual-rigth{
+    flex: 1 1 56%;
+     max-width: 650px;
+     max-height: 460px;
+}
+
+.last-section__img-visual{
+     width: 100%;
+     height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.last-section__list{
+    padding-left: 30px;
+}
+
+.last-section__sub-title{
+    padding: 15px 0 30px 0;
+}
+
+ .last-section__end-box{
+   padding-top: 60px;
+  }
+
 
 /*-------АДАПТИВ-------*/
 
@@ -1309,9 +1623,7 @@ body {
     }
 
     /*-----Переваги-----*/
-    .benefit {
-        margin: 130px 0;
-    }
+   
 
     .benefit__over-fone {
         top: 14%;
@@ -1328,9 +1640,7 @@ body {
 
 @media (max-width: 1329px) {
 
-   
-
-    /*-----Слайдер-----*/
+   /*-----Слайдер-----*/
     .slider__info-block {
         padding: 60px 0px;
     }
@@ -1369,13 +1679,17 @@ body {
 
     /*-----Про Нас-----*/
 
+    .segment{
+        margin-bottom: 140px;
+    }
+
     .about-us__box-title {
-        padding: 120px 0 70px 0;
+        padding-top: 140px;
         max-width: 370px;
     }
 
-    .about-us__title {
-        font-size: 60px;
+  .big-title {
+        font-size: 75px;
     }
 
     .about-us__block {
@@ -1389,6 +1703,16 @@ body {
     .about-us__icon-cart {
         width: 45px;
         height: 45px;
+    }
+
+    
+    /*-----Сторінка Ремонт-----*/
+    .article-section__rigth-box{
+        padding-top: 20px;
+    }
+
+    .first-section__title{
+       padding-top: 140px; 
     }
 }
 
@@ -1468,14 +1792,26 @@ body {
         width: 50px;
     }
 
+    /*-----Сторінка Ремонт-----*/
+
+.article-section__left-box{
+    flex: 1 1 50%;
+    
+    
+}
+
+.article-section__rigth-box{
+    padding-top: 30;
+    flex: 1 1 50%;
+
+}
 }
 
 @media(max-width: 1265px) {
     /*-----Сервіс-----*/
 
-    .service__sub-title {
-        font-size: 28px;
-        
+    .sub-title {
+      font-size: 28px;
     }
 
     .service__list-text {
@@ -1485,6 +1821,10 @@ body {
 
     .service__foto-block{
        height: 455px;
+    }
+
+    .service__sub-title{
+        padding-bottom: 20px;
     }
 
    
@@ -1509,6 +1849,11 @@ body {
     /*--Карта--*/
     .map__block {
         gap: 40px;
+    }
+
+       /*-----Сторінка Ремонт-----*/
+    .article-section__rigth-box{
+        padding-top: 0px;
     }
 }
 
@@ -1577,17 +1922,7 @@ body {
 
     /*-----Про Нас-----*/
 
-    .about-us__box-title {
-
-        padding: 100px 0 50px 0;
-        max-width: 370px;
-    }
-
-    .about-us__title {
-        font-size: 55px;
-    }
-
-    .about-us__block {
+     .about-us__block {
         gap: 40px;
     }
 
@@ -1637,9 +1972,7 @@ body {
 
     /*-----Переваги-----*/
 
-    .benefit {
-        margin: 100px 0;
-    }
+  
 
     .benefit__left-fon,
     .benefit__rigth-fon {
@@ -1653,12 +1986,10 @@ body {
         height: 360px;
     }
 
-    .benefit__container {
-        padding-bottom: 50px;
-    }
+   
 
-    .benefit__title {
-        font-size: 50px;
+    .title {
+        font-size: 60px;
     }
 
     .benefit__inner-item {
@@ -1681,27 +2012,10 @@ body {
 
     /*-----Сервіс-----*/
 
-    .service {
-        padding-bottom: 100px;
-    }
-
-    .service__box-title {
-        padding-bottom: 50px;
-    }
-
     .service__center-text{
         padding-bottom: 35px;
     }
 
-
-    .service__text-title {
-        font-size: 50px;
-    }
-
-    .product__container-title {
-        padding-bottom: 50px;
-    }
-    
     .service__text-block{
         padding-left: 40px;
     }
@@ -1720,34 +2034,13 @@ body {
     }
 
 
-    /*-----Продаж-----*/
-    .product {
-        margin: 0 0 100px 0;
-    }
-
-    .product__title-left {
-        font-size: 50px;
-    }
-
     /*--Карта--*/
 
-    .map {
-        margin-bottom: 100px;
-    }
-
-    .map__shop-contact {
+  .map__shop-contact {
         max-width: 550px;
     }
 
-    .map__box-title {
-        padding-bottom: 50px;
-    }
-
-    .map__title {
-        font-size: 50px;
-    }
-
-    .map__info-contact {
+   .map__info-contact {
         gap: 40px;
         padding: 0px 25px;
     }
@@ -1776,6 +2069,14 @@ body {
     .footer__social-box {
         gap: 15px;
     }
+
+        
+    /*-----Сторінка Ремонт-----*/
+
+       .baner-section {
+       margin-top: 80px;
+  
+        }
 
 }
 
@@ -1849,6 +2150,9 @@ body {
     .product__text-right {
         padding-top: 35px;
     }
+
+    
+  
 }
 
 @media(max-width: 1180px) {
@@ -1893,6 +2197,7 @@ body {
         max-width: 600px;
     }
 
+
     .about-us__img-box {
         height: 250px;
     }
@@ -1919,9 +2224,9 @@ body {
     
     /*-----Сервіс-----*/
     .service__sub-title {
-        font-size: 25px;
-        padding-bottom: 20px;
+     font-size: 25px;
     }
+   
 
     .service__list-text {
         font-size: 16px;
@@ -1950,6 +2255,41 @@ body {
     .product__text-right {
         padding-top: 45px;
     }
+
+    /*-----Сторінка Ремонт-----*/
+
+    .second-section__left{
+        flex: 1 1 50%; 
+        max-width: 600px;
+        padding-top: 0;
+    }
+   
+}
+
+@media(max-width: 1159px){
+   
+/*-----Сторінка Ремонт-----*/
+    .second-section__left{
+        flex: 1 1 60%; 
+        
+    }
+
+    .second-section__foto{
+        flex: 1 1 40%;
+        max-height: 420px; 
+
+    }
+
+/*-----Сторінка Ремонт-----*/
+
+.article-section__left-box{
+    flex: 1 1 50%;
+    max-height: 420px;
+}
+
+.article-section__rigth-box{
+   flex: 1 1 50%;
+}
 }
 
 @media(max-width: 1133px) {
@@ -2028,6 +2368,9 @@ body {
     .map__img-contact {
         width: 180px;
     }
+
+     
+     
 }
 
 @media(max-width: 1100px) {
@@ -2111,12 +2454,21 @@ body {
     }
 
     /*-----Про Нас-----*/
+
+    .segment {
+        margin-bottom: 120px;
+    }
+    
     .about-us__box-title {
-        padding: 80px 0 40px 0;
+        padding-top: 120px;
     }
 
-    .about-us__title {
-        font-size: 55px;
+  .box-title{
+    padding-bottom: 60px;
+  }
+
+    .big-title {
+        font-size: 60px;
     }
 
     .about-us__right-block {
@@ -2201,7 +2553,6 @@ body {
 
     .service__sub-title {
         font-size: 22px;
-
     }
 
    .service__list-text {
@@ -2251,6 +2602,23 @@ body {
     }
 
 
+     /*-----Сторінка Ремонт-----*/
+   
+    .first-section__title{
+       padding-top: 120px; 
+    }
+
+    .first-section__color-squares{
+     gap: 20px;
+     
+    }
+
+  .first-section__left-text,
+  .first-section__rigth-square{
+   padding: 20px;
+   font-size: 16px;
+  }
+
 }
 
 @media(max-width: 1035px) {
@@ -2272,8 +2640,21 @@ body {
         font-size: 13.3px;
     }
 
-   
+    /*-----Сторінка Ремонт-----*/
 
+ .article-section__left-box{
+    flex: 1 1 45%;
+    max-height: 440px;
+}
+
+ .article-section__rigth-box{
+   flex: 1 1 55%;
+}
+
+.last-section__visual-left{
+   padding-top: 0px
+
+}
 }
 
 @media(max-width: 1022px) {
@@ -2364,6 +2745,11 @@ body {
         padding-right: 5px;
     }
 
+    /*----- Сторінка Ремонт -----*/
+
+     .sub-title {
+      font-size: 26px;
+    }
 
 
 }
@@ -2379,6 +2765,13 @@ body {
     .swiper__box {
         margin-top: 65px;
     }
+
+    /*Заборона скролу*/
+    
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
+      }
 
     .menu__down-list {
         padding: 5px;
@@ -2593,6 +2986,25 @@ body {
         font-size: 13.5px;
     }
 
+          
+    /*-----Сторінка Ремонт-----*/
+
+    .baner-section {
+    margin-top: 60px;
+    }
+
+    .banner-title{
+        font-size: 30px;
+    }
+
+    .service-section__name{
+      font-size: 20px;
+    }
+
+    .service-section__box{
+    padding: 20px 0 20px 0;
+    }
+
 }
 
 @media(min-width: 999.5px) {
@@ -2628,7 +3040,6 @@ body {
     }
 
     .swiper__title {
-        
         font-size: 50px;
         line-height: 0.7;
         letter-spacing: 0.3;
@@ -2660,13 +3071,23 @@ body {
 
 
     /*-----Про НАС-----*/
+
+    .segment{
+       margin-bottom: 100px;
+    }
+    
     .about-us__box-title {
-        padding: 80px 0 50px 0;
+        padding-top: 100px;
+    }
+
+    .box-title{
+    padding-bottom: 50px;
     }
 
     .about-us__block {
         display: block;
         width: 100%;
+        padding-bottom: 60px;
     }
 
     .about-us__carts-box {
@@ -2705,6 +3126,7 @@ body {
     .about-us__img-box {
         height: 390px;
         width: 100%;
+        
     }
 
     .about-us__right-text {
@@ -2713,26 +3135,10 @@ body {
 
     
      /*-----Сервіс-----*/
-
-     .service {
-        padding-bottom: 80px;
-    }
-
-    .service__text-title {
-        font-size: 45px;
-    }
-
-    .service__sub-title{
-        padding-bottom: 20px;
-    }
-
-  
-    .servise__del-en{
+   
+     .servise__del-en{
         display: none;
     } 
-
-    
-
 
     /*-----Продаж-----*/
 
@@ -2755,21 +3161,23 @@ body {
 
     /*--Карта--*/
 
-    .map__block {
-        flex-wrap: wrap-reverse;
-        gap: 20px;
-    }
+  .map__block {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+   }
 
-    .map__box {
-        max-width: 990%;
-        width: 100%;
-        height: 380px;
-    }
-
-    .map__shop-contact {
+  .map__box {
+    max-width: 100%;
+    width: 100%;
+  
+  }
+    
+ .map__shop-contact {
         max-width: 100%;
         width: 100%;
-  }
+    }
+
 
     .map__logo-contact {
         padding: 25px 0;
@@ -2812,19 +3220,51 @@ body {
     .map__del-text {
         display: none;
     }
+
+
+ /*-----Сторінка Ремонт-----*/
+   
+    .first-section__title{
+       padding-top: 100px; 
+    }
+    .second-section__left{
+        flex: 1 1 57%; 
+        
+    }
+
+    .second-section__foto{
+        flex: 1 1 43%;
+        max-height: 100%;
+    }
+
+    .second-section__combo-block{
+        gap: 15px;
+
+    }
+
+.last-section__visual-blok{
+    gap: 15px;
+}
+
+.last-section__visual-left{
+ flex: 1 1 50%;
+    
+}
+
+.last-section__visual-rigth{
+    flex: 1 1 50%;
+    max-height: 100%;
+}
+
 }
 
 @media(max-width: 950px) {
     
+  /*------Переваги-----*/
+   
 
-
-    /*------Переваги-----*/
-    .benefit {
-        margin: 80px 0;
-    }
-
-    .benefit__title {
-        font-size: 45px;
+    .title {
+        font-size: 50px;
     }
 
     .benefit__left-fon,
@@ -2909,8 +3349,25 @@ body {
     
 }
 
-   
+@media(max-width: 914px){
+   .list-cut__two-ua,
+   .list-cut__three-ua{
+    display: none;
+   } 
+}
+
 @media(max-width: 895px) {
+
+     /*Бокове Меню*/
+
+     .menu__down-link {
+        font-size: 17px;
+    }
+
+    .menu-body {
+        width: 40%;
+
+    }
 
     /*-----Слайдер-----*/
 
@@ -2964,7 +3421,7 @@ body {
         padding: 20px 15px 0 15px;
     }
 
-    .about-us__title {
+    .big-title {
         font-size: 50px;
     }
 
@@ -2988,17 +3445,11 @@ body {
 
     /*-----Сервіс-----*/
 
-    .service__sub-title{
-        font-size: 20px;
-    }
-
-    .servise__cut-en{
+   .servise__cut-en{
         display: none;
     }
 
-
-
-    /*--Карта--*/
+     /*--Карта--*/
 
     .map__box {
         height: 330px;
@@ -3009,18 +3460,7 @@ body {
 
 @media(max-width: 849px) {
 
-    /*Бокове Меню*/
-
-    .menu__down-link {
-        font-size: 17px;
-    }
-
-    .menu-body {
-        width: 40%;
-
-    }
-
-    /* Hавігаційне меню*/
+   /* Hавігаційне меню*/
 
     .menu__items {
         row-gap: 5px;
@@ -3078,9 +3518,8 @@ body {
         height: 13px;
     }
 
-   
-
-    /*-----Переваги-----*/
+    
+   /*-----Переваги-----*/
 
     .benefit__info-items {
         gap: 15px;
@@ -3098,8 +3537,12 @@ body {
         font-size: 14px;
     }
 
+    .service__center-text{
+        padding-bottom: 15px;
+    }
     .service__content-box {
         flex-direction: column-reverse;
+        gap: 15px;
     }
 
     .service__foto-block {
@@ -3107,7 +3550,7 @@ body {
         max-height: 350px;
     }
 
-    .service__sub-title {
+   .service__sub-title {
         font-size: 25px;
     }
 
@@ -3136,30 +3579,79 @@ body {
         display: inline;
     }
 
-    /*-----Продаж-----*/
-
-    .product {
-        margin: 0 0 80px 0;
+    .product__container {
+        gap: 15px;
+        padding-top: 15px;
     }
 
-    .product__title-left {
-        font-size: 45px;
-    }
+  
 
- 
+   /*----Карта-----*/
 
-    /*----Карта-----*/
-    .map {
-        margin-bottom: 80px;
-    }
-
-    .map__title {
-        font-size: 45px;
-    }
-
-    .map__sub-title {
+   .map__block{
+    gap: 15px;
+   }
+   
+  .map__sub-title {
         font-size: 17px;
     }
+
+/*-----Сторінка Ремонт-----*/  
+
+.service-section__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-section__item-box {
+    background-color: #F57520;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    height: auto;
+}
+
+.service-section__name{
+    font-size: 25px;
+}
+
+.servise-section__box{
+    padding: 15px 0;
+}
+
+.service-section__img-box {
+    padding: 15px 5px 0 5px;
+    max-width: 270px;
+    height: auto;
+    display: block;
+  }
+
+
+  .article-section__visual-bloc{
+    display: flex; 
+    flex-direction: column;
+    padding-bottom: 0;
+    gap: 15px;
+}
+    
+
+.article-section__left-box{
+    max-width: 100%;
+        
+} 
+
+.article-section__cartoon-left{
+        width: 100%;
+        max-height: 330px;
+        object-fit: cover;
+        display: block;
+}
+
+.last-section__sub-title{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
 }
 
 @media(max-width: 825px) {
@@ -3199,8 +3691,6 @@ body {
         font-size: 13.5px;
     }
 
-
-
     /*-----Футер-----*/
 
     .footer__logo-company {
@@ -3222,6 +3712,49 @@ body {
     .footer__item-list {
         padding-bottom: 10px;
     }
+
+    
+/*-----Сторінка Ремонт-----*/
+
+.first-section__color-squares{
+     padding-top: 5px;
+}
+
+.second-section__combo-block{
+        flex-direction: column-reverse;
+}
+    
+.second-section__left{
+        max-width: 100%;
+}
+
+.second-section__foto{
+     max-width: 100%;
+}
+
+.second-section__foto-img{
+    width: 100%;
+    max-height: 330px;
+    object-fit: cover;
+}
+
+.last-section__visual-blok{
+    flex-direction: column-reverse;
+}
+
+.last-section__visual-left{
+ max-width: 100%;
+    
+}
+
+.last-section__visual-rigth{
+    max-width: 100%;
+    
+}
+
+.last-section__img-visual{
+   max-height: 320px;
+}
 }
 
 @media(max-width: 796px) {
@@ -3285,14 +3818,17 @@ body {
 
     /*-----Про НАС-----*/
 
-    .about-us__block {
-        padding-bottom: 40px;
+    .segment{
+        margin-bottom: 80px;
     }
 
     .about-us__box-title {
-        padding: 60px 0 35px 0;
+        padding-top: 80px;
     }
 
+    .box-title{
+     padding-bottom: 40px;
+     }
 
 
     .about-us__cart {
@@ -3318,33 +3854,9 @@ body {
         line-height: 150%;
     }
 
-    /*----Переваги----*/
+   /*------Переваги-----*/
 
-    .benefit__container {
-        padding-bottom: 35px;
-    }
-
-    /*-----Сервіс-----*/
-
-    .service {
-        padding-bottom: 60px;
-    }
-
-    .service__box-title {
-        padding-bottom: 35px;
-    }
-
-    .service__center-text {
-        padding-bottom: 20px;
-    }
-
-    /*------Переваги-----*/
-
-    .benefit {
-        margin: 60px 0;
-    }
-
-    .benefit__item:first-child {
+   .benefit__item:first-child {
         margin-left: 0px;
     }
 
@@ -3367,9 +3879,7 @@ body {
         height: 170px;
     }
 
-    .benefit__container {
-        padding-bottom: 35px;
-    }
+  
 
     .benefit__item-title {
         font-size: 20px;
@@ -3385,31 +3895,20 @@ body {
 
     /*-----Продаж-----*/
 
-    .product {
-        margin: 0 0 60px 0;
-    }
-
-    .product__container-title {
-        padding-bottom: 35px;
-    }
-
-    .product__text-right {
+   .product__text-right {
         padding: 0 0 40px 0;
-
     }
 
     /*-----Карта-----*/
 
-    .map {
-        margin-bottom: 60px;
-    }
-
-    .map__box-title {
-        padding-bottom: 35px;
-    }
-
-    .map__del-text {
+   .map__del-text {
         display: none;
+    }
+
+     /*-----Сторінка Ремонт-----*/
+   
+    .first-section__title{
+       padding-top: 80px; 
     }
 
 }
@@ -3424,7 +3923,8 @@ body {
     /*Бокове Меню*/
 
     .menu-body {
-        width: 50%;
+        width: 45%;
+        padding: 30px 30px 0 25px;
     }
 
     /*-----Слайдер-----*/
@@ -3503,9 +4003,7 @@ body {
 
 
     /*-----Про НАС-----*/
-
-
-    .about-us__block {
+   .about-us__block {
         width: 100%;
     }
 
@@ -3547,7 +4045,54 @@ body {
         line-height: 160%;
     }
 
-    
+     /*-----Сторінка Ремонт-----*/
+
+
+
+     .first-section__main-foto,
+     .article-section__foto,
+     .second-section__foto-container{
+        height: clamp(250px, 40vw, 350px);
+        max-width: 100%;
+        overflow: hidden;
+        padding-bottom: 15px;
+     }
+
+     .first-section__img-main,
+     .second-section__cartun-img,
+     .article-section__img-foto{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+     }
+
+    .sub-title {
+      font-size: 22px;
+    }
+
+    .text-page{
+        padding-bottom: 10px;
+    }
+
+  .second-section__foto-container{
+    padding-bottom: 15px;
+    }
+
+.second-section__foto-box{
+    padding: 0 0 15px 0;
+    gap: 15px;
+   }
+
+.article-section__box-fotos{
+    gap: 15px;
+    padding-top: 0;
+   }
+
+ .last-section__text--end{
+    padding: 20px;
+   
+   }
 }
 
 @media (max-width: 747px) {
@@ -3575,25 +4120,28 @@ body {
         font-size: 13px;
     }
 
+
+    /*-----Сторінка Ремонт-----*/
+    
+    .first-section__color-squares{
+     flex-direction: column;
+     
+    }
+
 }
 
 @media(max-width: 725px) {
 
-    .map__title{
-        font-size: 40px;
-      }
-    
-      .map__logo-contact{
+    .map__logo-contact{
         padding: 20px 0;
-      }
+    }
       
-      .map__info-contact {
+    .map__info-contact {
         display: flex;
         flex-direction: row; 
         justify-content:center; 
         padding: 0 15px; 
         gap: 90px; 
-        
     }
      
     
@@ -3609,12 +4157,40 @@ body {
         flex: 0 1 auto; 
         padding-bottom: 30px; 
     }
+
+
+    /*-----Сторінка Ремонт-----*/
+
+
+.first-section__color-squares{
+    gap: 15px;
+}
+
+.service-section__boxes{
+    gap: 15px;
+}    
     
+.service-section__img-box {
+    padding: 15px 15px 0 15px;
+    max-width: 270px;
+}
+    
+  .service-section__name{
+    font-size: 20px;
+  }
+
+
   
 
 }
 
 @media (max-width: 698px) {
+
+      /* Позиціонування виїзджаючої навігації з права*/
+      .menu-body {
+        width: 52%;
+        right: -65%;
+    }
 
     /*-----Про Нас-----*/
 
@@ -3696,7 +4272,6 @@ body {
         position: absolute;
         left: 55%;
         transform: translateX(-55%);
-
     }
 
     .header__container {
@@ -3704,14 +4279,7 @@ body {
         gap: 20px;
     }
 
-    /* Позиціонування виїзджаючої навігації з права*/
-    .menu-body {
-        width: 55%;
-        right: -60%;
-
-    }
-
-    /* Hавігаційне меню*/
+   /* Hавігаційне меню*/
 
     .menu__list-link,
     .menu__list-name,
@@ -3719,9 +4287,7 @@ body {
         font-size: 19px;
     }
 
-
-
-    /*Зменшення значка бургера */
+ /*Зменшення значка бургера */
     .menu-burger {
         width: 20px;
         height: 16px;
@@ -3763,17 +4329,24 @@ body {
 
     /*-----Про нас-----*/
 
-    .about-us__box-title {
-        padding: 50px 0 35px 0;
+    .segment{
+        margin-bottom: 60px;
     }
 
-    .about-us__title {
+    .about-us__box-title {
+        padding-top: 60px;
+    }
+
+    .box-title{
+     padding-bottom: 35px;
+     }
+
+    .big-title {
         font-size: 45px;
     }
 
     .about-us__inner-info {
         padding: 15px 15px 0;
-
     }
 
 
@@ -3807,7 +4380,7 @@ body {
 
     /*------Переваги-----*/
 
-    .benefit__title {
+    .title {
         font-size: 40px;
     }
 
@@ -3825,14 +4398,6 @@ body {
 
     /*-----Сервіс-----*/
 
-    .service {
-        padding-bottom: 50px;
-    }
-
-    .service__text-title {
-        font-size: 40px;
-    }
-
     .service__text-block{
         padding-left: 15px;
     }
@@ -3846,9 +4411,7 @@ body {
         gap: 20px;
     }
 
-    .service__sub-title {
-        padding-bottom: 20px;
-    }
+   
 
     /*-----Продаж-----*/
 
@@ -3856,9 +4419,7 @@ body {
         height: 250px;
     }
 
-    .product__title-left {
-        font-size: 40px;
-    }
+    
 
     /*-----Футер-----*/
 
@@ -3866,12 +4427,7 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 30px;
-
-    }
-
-    .footer__social-net{
-        
-    }
+   }
 
     .footer__social-box {
         margin-left: 25px;
@@ -3897,9 +4453,36 @@ body {
         width: 130px;
     }
 
-    
+    /*-----Сторінка Ремонт-----*/
+   
+    .first-section__title{
+       padding-top: 60px; 
+    }
 
-    
+.second-section__foto-box,
+.article-section__box-fotos{
+    padding: 0 0 15px 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.second-section__img,
+.article-section__img-fotos{
+    flex: 1 1 100%;
+    max-width: 100%;
+    max-height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.last-section__list{
+    padding-left: 15px;
+}
+
+.list-cut__one-ru{
+    display: none;
+}
 
 }
 
@@ -3939,9 +4522,26 @@ body {
     .servise__del-ru {
         display: none;
     }
+
+/*-----Сторінка Ремонт-----*/
+
+     .first-section__color-squares{
+        padding-top: 0;
+        gap: 15px;
+     }
+
+    .first-section__left-text,
+    .first-section__rigth-square{
+     padding: 15px;
+     font-size: 16px;
+     font-weight: 400;
+    }
+
+    .list-cut__one-ua{
+        display: none;
+    }
+
 }
-
-
 
 @media (max-width: 569px) {
 
@@ -3993,7 +4593,7 @@ body {
         padding: 10px 15px 0;
     }
 
-    .about-us__title {
+    .big-title {
         font-size: 40px;
     }
 
@@ -4014,19 +4614,13 @@ body {
 
     /*------Переваги-----*/
 
-    .benefit__container {
-        padding-bottom: 35px;
-    }
-
-    .benefit {
-        margin: 50px 0;
-    }
+   
 
     .benefit__item {
         height: 180px;
     }
 
-    .benefit__title {
+    .title {
         font-size: 35px;
     }
 
@@ -4042,15 +4636,6 @@ body {
         font-size: 14px;
     }
 
-    /*-----Сервіс-----*/
-    .service {
-        padding-bottom: 40px;
-    }
-
-    .service__text-title {
-        font-size: 35px;
-    }
-
     /*-----Сервіс2----*/
        .servise__сut-ru{
         display: none;
@@ -4058,9 +4643,7 @@ body {
 
     /*-----Продаж-----*/
 
-    .product__title-left {
-        font-size: 35px;
-    }
+    
 
     .product__text-right p {
         font-size: 16px;
@@ -4083,11 +4666,7 @@ body {
         padding: 0 15px;
     }
 
-    .map__title {
-        font-size: 35px;
-    }
-
-    .map__sub-title {
+  .map__sub-title {
         font-size: 16px;
         padding-bottom: 3px;
     }
@@ -4096,9 +4675,25 @@ body {
         font-size: 14px;
     }
 
+    /*-----Сторінка Ремонт-----*/
+
+    .last-section__sub-title{
+    padding-top: 0;
+}
+
+.last-section__end-box {
+    padding-top: 30px;
+}
+
 }
 
 @media (max-width: 499px) {
+
+      /* Позиціонування виїзджаючої навігації з права*/
+      .menu-body {
+        width: 65%;
+        right: -75%;
+    }
 
     /*-----Слайдер-----*/
    
@@ -4118,8 +4713,12 @@ body {
 
     /*-----Про Нас-----*/
 
+    .segment{
+        margin-bottom: 40px;
+    }
+
     .about-us__box-title {
-        padding: 40px 0 35px 0;
+        padding-top: 40px;
     }
 
     .about-us__name-cart {
@@ -4129,6 +4728,10 @@ body {
     .about-us__text-cart {
         font-size: 12px;
 
+    }
+
+    .about-us__block {
+        padding-bottom: 40px;
     }
 
     .about-us__title-cart {
@@ -4149,8 +4752,7 @@ body {
     }
 
   
-
-    /*-----Сервіс-----*/
+  /*-----Сервіс-----*/
 
     .service__foto-block {
         max-height: 230px;
@@ -4199,6 +4801,37 @@ body {
        padding-bottom: 20px; 
    }
   
+
+/*-----Сторінка Ремонт-----*/
+   
+.first-section__title{
+       padding-top: 40px; 
+}
+  
+.service-section__boxes{
+    gap: 15px;
+} 
+
+.service-section__item-box{
+   flex: 1 1 calc(50% - 15px) 
+}
+
+.service-section__img-box {
+    padding: 15px 15px 0 15px;
+    width: 100%;
+}
+    
+.service-section__name{
+    font-size: 18px;
+}
+
+.last-section__sub-title{
+    font-size: 22px;
+}
+
+ .last-section__end-box{
+   padding-top: 20px;
+  }
   
 }
 
@@ -4206,17 +4839,32 @@ body {
 
     /*-----Переваги ------*/
 
-    .benefit__container {
-        padding-bottom: 25px;
-    }
-
-   .benefit__inner-item {
+    .benefit__inner-item {
         padding: 15px;
     }
 
     .benefit__text {
         font-size: 13.5px;
     }
+
+    /*-----Сторінка Ремонт-----*/
+
+ .service-section__item-box{
+   flex: 1 1 100%; 
+}
+
+.service-section__img-box{
+    width: 100%;
+    padding: 10px 10px 0 10px;
+}
+
+.service-section__box{
+    padding: 10px 0 20px 0;
+}
+
+.service-section__name{
+    font-size: 20px;
+}
 
 }
 
@@ -4256,7 +4904,10 @@ body {
 
     .menu-body {
         width: 70%;
-        right: -75%;
+        right: -80%;
+        top: 55px;
+        padding: 25px 30px 0 25px;
+        
     }
 
     /* Hавігаційне меню*/
@@ -4289,6 +4940,16 @@ body {
         height: 100%;
         width: auto; 
         object-fit: cover;
+    }
+
+
+/*-----Сторінка Ремонт-----*/
+.baner-section {
+    margin-top: 50px;
+    }
+
+    .banner-title{
+        font-size: 22px;
     }
 
    
@@ -4332,6 +4993,10 @@ body {
     /* -----Сервіс2-----*/
     .servise__cut-en{
         display: none;
+    } 
+
+    .service__text-block{
+        padding-left: 0px;
     }
 
 
@@ -4365,6 +5030,10 @@ body {
         font-size: 13px;
     }
 
+    .last-section__list{
+        padding-left: 0;
+    }
+
 
 }
 
@@ -4392,9 +5061,9 @@ body {
 
     /*-----Про Нас-----*/
 
-    .about-us__box-title {
-        padding: 40px 0 25px 0;
-    }
+     .box-title{
+     padding-bottom: 25px;
+     }
 
     .about-us__carts-box {
         display: flex;
@@ -4472,13 +5141,10 @@ body {
     }
 
     /*-----Сервіс-----*/
-    .service__box-title {
-        padding-bottom: 25px;
-    }
-
     .service__sub-title {
         font-size: 19px;
         padding-bottom: 15px;
+        
     }
 
     .service__list-text {
@@ -4501,11 +5167,7 @@ body {
 
     /*-----Продаж-----*/
 
-    .product__container-title {
-        padding-bottom: 25px;
-    }
-
-    .product__image-block {
+   .product__image-block {
         height: 210px;
     }
 
@@ -4514,6 +5176,7 @@ body {
     }
 
     /* -----Карта-----*/
+
    .map__logo-contact {
         padding: 15px;
     }
@@ -4566,6 +5229,11 @@ body {
         font-size: 16px;
     }
 
+ /*-----Сторінка Ремонт-----*/
+    .list-cut__ziro-ua{
+    display: none;
+}
+
 }
 
 @media (max-width: 399px) {
@@ -4575,6 +5243,7 @@ body {
     .menu-body {
         width: 70%;
         right: -75%;
+        padding: 20px 30px 0 15px;
     }
 
     /* Hавігаційне меню*/
@@ -4600,13 +5269,16 @@ body {
 .swiper__right-foto {
     height: auto; 
 }
+
+
 }
 
 @media (max-width: 369px) {
 
     .menu-body {
-        width: 80%;
+        width: 77%;
         right: -100%;
+        padding: 20px 30px 0 15px;
 
     }
 
@@ -4641,7 +5313,7 @@ body {
         padding-bottom: 10px;
     }
 
-    .about-us__title{
+    .big-title{
        font-size: 35px;
     }
 
@@ -4651,19 +5323,22 @@ body {
         padding: 15px 15px 0;
     }
 
-    .benefit__title{
+    .title{
         font-size: 30px;
+    }
+
+    .last-section__sub-title{
+    font-size: 21px;
     }
 
     /*-----Сервіс-----*/
-    .service__text-title{
-        font-size: 30px;
+
+    .cut-auto{
+        display: none;
     }
 
-    .product__title-left{
-        font-size: 30px;
-    }
-}
+  
+  
 
 @media(max-width: 355px) {
 
@@ -4714,8 +5389,9 @@ body {
     /* Позиціонування виїзджаючої навігації з права*/
 
     .menu-body {
-        width: 75%;
+        width: 80%;
         right: -85%;
+        padding: 30px 20px 0 20px
     }
 
     /* Hавігаційне меню*/

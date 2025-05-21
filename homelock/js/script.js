@@ -1,20 +1,25 @@
 
-// Динамічне додавання класу в бургер 
+// Динамічне додавання класу в бургер для відкривання і скролу
 
 document.addEventListener('click', function(e) {
-    const targetElement = e.target;
+    const target = e.target;
+    const html = document.documentElement;
+    const body = document.body;
 
-    // Перевіряємо, чи клікнули на бургер-меню
-    if (targetElement.closest('.menu-burger')) {
-        document.documentElement.classList.toggle('menu-open');
+    if (target.closest('.menu-burger')) {
+        html.classList.toggle('menu-open');
+    } else if (html.classList.contains('menu-open') && !target.closest('.menu')) {
+        html.classList.remove('menu-open');
+    }
+
+    // Додаємо або знімаємо клас прокрутки залежно від стану меню
+    if (html.classList.contains('menu-open')) {
+        body.classList.add('no-scroll');
     } else {
-        // Перевіряємо, чи клікнули за межами меню
-        const menuOpen = document.documentElement.classList.contains('menu-open');
-        if (menuOpen && !targetElement.closest('.menu')) {
-            document.documentElement.classList.remove('menu-open');
-        }
+        body.classList.remove('no-scroll');
     }
 });
+
 
 // Підключення слайдера 
 document.addEventListener('DOMContentLoaded', function () {
