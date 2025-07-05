@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="786" height="235" viewBox="0 0 786 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Placeholder-Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+    <!-- Права частина ПРОЗОРА -->
+
+    <!-- Ліва частина (суцільний червоний фон) -->
+    <rect id="Icon-Background" fill="#8B1A1A" x="0" y="0" width="235" height="235" rx="30"></rect>
+
+    <!-- Текст "Your Logo" -->
+    <!-- Параметри тексту: -->
+    <!--   font-family: 'Arial Black', Arial, Helvetica, sans-serif -->
+    <!--   font-size: 170 -->
+    <!--   font-weight: bold -->
+    <!--   fill: #8B1A1A (ТЕМНО-ЧЕРВОНИЙ) -->
+    <!--   text-anchor: middle -->
+    <!--   dominant-baseline: central -->
+    <!--   x: 510.5 -->
+    <!--   y: 117.5 -->
+    <text id="Logo-Text"
+          font-family="'Arial Black', Arial, Helvetica, sans-serif" 
+          font-size="170" 
+          font-weight="bold"
+          fill="#8B1A1A"  
+          text-anchor="middle"
+          dominant-baseline="central" 
+          x="510.5" 
+          y="117.5">Logo</text> 
+
+  </g>
+</svg>
