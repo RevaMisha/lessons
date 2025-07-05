@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Мовні теги -->
+    <link rel="alternate" hreflang="uk" href="https://example.com/ua/">
+    <link rel="alternate" hreflang="en" href="https://example.com/en/">
+    <link rel="alternate" hreflang="ru" href="https://example.com/ru/">
+    <link rel="alternate" hreflang="x-default" href="https://example.com/ua/">
+
+    <!-- Фавікон -->
+    <link rel="icon" href="../img/logo/Fav.svg">
+
+    <!-- Тайтл -->
+    <title>Ремонт замков в Городе | Компания</title> 
+
+    <!-- Дескріпшен -->
+    <meta name="description" 
+          content="Проводим в (Городе)ремонт замков, от квартир, гаражей, 
+          автомобильных замков, замков от сейфов, депозитных ячеек, банковских хранилищ.">
+    
+
+    <!-- Шрифт Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Слайдер Swiper -->
+    <link rel="stylesheet" href="../swiper/swiper-bundle.min.css">
+    <script src="../swiper/swiper-bundle.min.js" defer></script>
+
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Хедер -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo-box">
+                    <img class="header__logo-img" src="../img/logo/LG.svg" alt="Логотип компании">
+                </div>
+
+                <div class="header__navigation-block">
+                    <div class="header__navigation-list menu">
+                        <div class="menu-body">
+                            <ul class="menu__items">
+                                <li class="menu__list">
+                                    <a href="index.html" class="menu__list-link">Главная</a>
+                                </li>
+                                <li class="menu__list">
+                                    <span class="menu__list-name">Аварийное вскрытие</span>
+                                    <span class="header__errow">
+                                        <img class="header__errow-img" src="../img/icon/arrow-back.svg" alt="">
+                                    </span>
+                                    <div class="menu__down">
+                                        <ul class="menu__down-list">
+                                            <li class="menu__down-item">
+                                                <a href="avariinoe-vskritie-dverei-lvov.html" class="menu__down-link">Открытие дверей</a>
+                                            </li>
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Открытие сейфов</a>
+                                            </li>
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Открытие авто</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__list">
+                                    <span class="menu__list-name">Изготовление ключей</span>
+                                    <span class="header__errow">
+                                        <img class="header__errow-img" src="../img/icon/arrow-back.svg" alt="">
+                                    </span>
+                                    <div class="menu__down dropdown">
+                                        <ul class="menu__down-list">
+                                            <li class="menu__down-item">
+                                                <a href="izgotovlenie-kluchey-lvov.html" class="menu__down-link">Дублирование ключей</a>
+                                            </li>
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Копирование авто ключей</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__list">
+                                    <span class="menu__list-name">Ремонт</span>
+                                    <span class="header__errow">
+                                        <img class="header__errow-img" src="../img/icon/arrow-back.svg" alt="">
+                                    </span>
+                                    <div class="menu__down">
+                                        <ul class="menu__down-list">
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Ремонт замков</a>
+                                            </li>
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Ремонт авто замков</a>
+                                            </li>
+                                            <li class="menu__down-item">
+                                                <a href="#" class="menu__down-link">Ремонт замков зажигания</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__list">
+                                    <span class="menu__list-name">Язык RU</span>
+                                    <span class="header__errow">
+                                        <img class="header__errow-img" src="../img/icon/arrow-back.svg" alt="errow">
+                                    </span>
+                                    <div class="menu__down">
+                                        <ul class="menu__down-leng">
+                                            <li class="menu__down-item menu__down-item--leng">
+                                                <a href="../ua/remont-zamkiv-lviv.html" class="menu__down-link">UA</a>
+                                            </li>
+                                            <li class="menu__down-item menu__down-item--leng">
+                                                <a href="../en/repair-locks-lviv.html" class="menu__down-link">EN</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__contact-box">
+                    <img class="header__phone-icon" src="../img/icon/smartphone.svg" alt="">
+                    <a class="header__phone-link" href="tel:+380123456789">+38 (012) 345-67-89</a>
+                </div>
+
+                <!-- Бургер -->
+                <button class="menu-burger">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Страница Ремонт ру -->
+            <div class="baner-section">
+
+                <div class="baner-section__baner-box">
+                     <img class="baner-section__img-baner" src="../img/repair/ремонт-замків.jpg" alt="">  
+                    
+                    <div class="darkness"></div> 
+                     
+                    <div class="baner-section__container">
+                        <h1 class="baner-section__fist-title banner-title">Ремонт замков в Городе</h1> 
+
+                     </div>
+
+                  </div>  
+                  
+            </div>
+            
+
+          <div class="first-section segment">
+                <div class="first-section__container">
+                    <div class="first-section__title box-title">
+                        <h2 class="first-section__name-title big-title anim-title">Сломался замок?</h2>
+                    </div>
+
+                    <div class="first-section__main-foto">
+                        <img class="first-section__img-main" src="../img/repair/ремонт-сувальдних-замків.jpg" alt="">
+                    </div>
+
+                    <p class="first-section__text text-page">
+                        У вас вышел из строя цилиндровый механизм в замке, ключ заедает при открытии или замок открывается с определённым усилием?
+                        Главное — вовремя распознать проблему и обратиться к нам за помощью. Мы починили уже тысячи замков, поэтому сможем починить и ваши запорные устройства.
+                        А если вы оказались перед дверью, которая не открывается, мы придём на помощь и разблокируем её, устранив все неисправности.
+
+                    </p>
+
+
+                    <p class="first-section__text text-page">
+                        Замок — это надёжный механизм, детали которого спроектированы так, чтобы безотказно служить десятилетиями. 
+                        И пока он исправно работает, мы никогда не задумываемся о том, как он устроен внутри.
+
+
+                    </p>
+
+                    <p class="first-section__text text-page">
+                        Однако, когда речь заходит о ремонте замка, мы часто не представляем, как это происходит. 
+                        За каждой нашей фразой «ключ застрял в замке» или «замок не открывается» скрывается 
+                        определённая деталь механизма, которая постепенно исчерпала свой ресурс или сломалась.
+                    </p>
+
+
+                    <div class="first-section__color-squares">
+
+                        <div class="first-section__left-square">
+
+                            <p class="first-section__left-text ">
+                                В Городе отремонтировать замок однозначно выгоднее, чем покупать такой же на замену. 
+                                Ведь нашему профессиональному мастеру под силу определить и заменить именно ту «больную» деталь, 
+                                сохраняя остальной механизм для дальнейшей службы.
+                            </p>
+                        </div>
+
+                        <div class="first-section__rigth-square">
+
+                            <p class="first-section__rigth-text ">
+                                А если вы оказались перед своей дверью, которая не реагируют на открытие, мы придём на помощь и разблокируем замки, в дальнейшем устранив все поломки.
+                            </p>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+          </div>
+
+          <div class="service-section segment">
+                
+                <div class="service-section__container">
+                    
+                   <div class="service-section__box-title box-title"> 
+                         <h2 class="service-section__title title anim-title">Мы ремонтируем</h2>
+                    </div>
+
+                    <div class="service-section__boxes">
+
+                        <div class="service-section__item-box">
+                            <img class="service-section__img-box" src="../img/repair/ремонт-квартирних-замків.png"
+                                alt="ремонт дверных замков">
+
+                            <div class="service-section__box">
+                                <p class="service-section__name">Дверные замки</p>
+
+                            </div>
+                        </div>
+
+                        <div class="service-section__item-box">
+                            <img class="service-section__img-box" src="../img/repair/ремонт-гаражнич-замків.png" 
+                            alt="гаражный замок ремонт">
+
+                            <div class="service-section__box">
+                                <p class="service-section__name">Гаражные замки</p>
+
+                            </div>
+                        </div>
+
+                        <div class="service-section__item-box">
+                            <img class="service-section__img-box" src="../img/repair/ремонт-сейфових-замків.png" 
+                            alt="сейфовый замок ремонт">
+
+                            <div class="service-section__box">
+                                <p class="service-section__name">Сейфовые замки</p>
+
+                            </div>
+                        </div>
+
+                        <div class="service-section__item-box">
+                            <img class="service-section__img-box" src="../img/repair/ремонт-авто-замків.png" 
+                            alt="ремонт автомобильного замка">
+
+                            <div class="service-section__box">
+                                <p class="service-section__name">Авто замки</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+          </div>
+     
+            
+        <div class="second-section segment">
+                <div class="second-section__container">
+                    <div class="second-section__title-box box-title"> 
+                    <h2 class="second-section__title title anim-title">Ремонт замков сувальдных</h2>
+                    </div>
+
+                    <div class="second-section__foto-container">
+                        <img class="second-section__cartun-img" src="../img/repair/відримонтувати-замок-сувальдний.jpg"
+                            alt="замок сувальдный ремонт">
+                    </div>
+
+                    <p class="second-section__text text-page">
+                        Сувальдные замки часто используются на металлических дверях, в квартирах, гаражах и сейфах. 
+                        Свою популярность они приобрели в середине 90-х годов как основные врезные замки с повышенной секретностью. 
+                    </p>
+
+                    <p class="second-section__text text-page">
+                        Они встречаются в металлических дверях от недорогих брендов: «Class», «Эльбор», «Про-Сам», «Border», «Gardian», 
+                        «Kale», а также среди более надёжных аналогов итальянского производства с улучшенными эксплуатационными свойствами 
+                        и более высокой секретностью: «Cisa», «Mottura», «Sub», «Atra», «Iseo», «Securemme».
+                    </p>
+
+
+                    <p class="second-section__sub-title sub-title">Треснули пружины на сувальдах в замке</p>
+
+
+                    <p class="second-section__text text-page">
+                        Пружина — это тонкая пружинящая проволока на каждой из сувальд (кодовых пластин), которая служит для возвращения 
+                        их в исходное положение. Постоянные циклы подъёма приводят к тому, что в какой-то момент пружины трескаются. 
+                        В результате, при взаимодействии с ключом, сувальда со сломанной пружиной не сможет вернуться в исходное положение, 
+                        и замок перестанет открываться, а вы не сможете попасть в помещение. 
+                    </p>
+
+                    <div class="second-section__foto-box">
+                        <img class="second-section__img" src="../img/repair/сувальди-в-замку.jpg" alt="Сувальды в замке">
+                        <img class="second-section__img" src="../img/repair/зломана-сувальдна-пружина.jpg" alt="Треснула пружина на сувальде">
+                    </div>
+
+                    <p class="second-section__text text-page">
+                       Такая распространённая проблема встречается в старых моделях: «Klass», «Эльбор», «ЗГС (Гродно)», а иногда и в «Gardian». 
+                    </p>
+
+                    <p class="second-section__text text-page">
+                        После аварийного открытия замка в результате такой проблемы отдельные сломанные пружины на сувальдах можно заменить или установить новый пакет сувальд (кодовых пластин), к которому прилагается новый комплект ключей.
+                    </p> 
+
+                    <p class="second-section__sub-title sub-title">
+                        Сувальдный замок не открывается ключом
+                    </p>
+
+                    <p class="second-section__text text-page">
+                        Среди распространённых причин неоткрывания замка собственным ключом — так называемый «переворот». 
+                        Это определённая техническая неисправность ключа и замка, которая делает невозможным правильный 
+                        подъём сувальд в замке. 
+                    </p>
+
+                    <p class="second-section__text text-page">
+                        Для понимания уточним, что ключ имеет две бородки с кодовой нарезкой с двух сторон. 
+                        Задача бородок — при каждом полуобороте выставлять сувальды замка в правильное кодовое положение. 
+                    </p>
+
+                    <div class="second-section__combo-block">
+
+                        <div class="second-section__left">
+
+
+
+                            <p class="second-section__text text-page">
+                                При корректной работе на первом полуобороте ключ, взаимодействуя с кодовыми пластинами (сувальдами), 
+                                выставляет их в правильное кодовое положение, что позволяет засову (ригелю) сместиться в направлении 
+                                движения ключа. На втором полуобороте другая сторона кодовой бородки, взаимодействуя с сувальдами, 
+                                выстраивает их в правильное кодовое положение, что также приводит к смещению ригеля. 
+                            </p>
+
+                            <p class="second-section__text text-page">
+                                Что касается «переворота», то на первом полуобороте в замке ключ, правильно выстраивая сувальды, 
+                                прокручивается, но засов (ригель) не смещается. В результате на втором полуобороте вторая бородка 
+                                ключа не может выстроить сувальды в правильное кодовое положение, так как они остались в кодовом 
+                                положении «один», под первую бородку. 
+                            </p>
+                        </div>
+
+
+                        <div class="second-section__foto">
+                            <img class="second-section__foto-img" src="../img/repair/робота-сувальдного-ключа.jpg"
+                                alt="ключ поднимает сувальди">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <p class="second-section__text text-page border-line">
+                       В таком случае вы не сможете открыть двери, так как ключ не сможет «набрать» 
+                       правильную кодовую комбинацию. Чтобы попасть в помещение, вам придётся обратиться 
+                       к специалисту по аварийному открытию замков. 
+                    </p>
+
+                    <p class="second-section__text text-page">
+                        «Переворот» часто встречается в бюджетных моделях: «Class», «Эльбор», «Border», «Gardian» и в итальянских «Cisa». 
+
+                    </p>
+
+                    <p class="second-section__text text-page">
+                        После того как замок будет разблокирован, его нужно будет заменить на новый, 
+                        так как существует риск повторения ситуации с «переворотом».
+                    </p>
+
+                    <p class="second-section__sub-title sub-title">
+                        Деформация нарезки на ключе 
+                    </p>
+
+                    <p class="second-section__text text-page">
+                        На ключе сувальдного замка можно увидеть первый и последний кодовые выступы секретов, 
+                        которые часто могут деформироваться или сломаться от падений на пол, а также погнуться 
+                        в процессе многолетнего использования. Деформация или отсутствие одного из кодовых 
+                        секретов на ключе приведёт к тому, что вы не сможете открыть свой замок. 
+                        Эту проблему мы легко решаем, изготовив заказчику новый дубликат ключа.
+                    </p>
+
+                    <p class="second-section__sub-title sub-title">
+                       Выработка на сувальдах замка 
+                    </p>
+
+                    <p class="second-section__text text-page">
+                        Со временем рабочие кромки сувальд, по которым скользит бородка ключа в замке, изнашиваются, 
+                        то есть металл в местах взаимодействия уменьшается. Это сначала приводит к заеданию ключа во 
+                        время работы в замке, а затем замок полностью перестаёт открываться. 
+
+                    </p>
+
+                    <p class="second-section__text text-page">
+                        Как правило, в таких случаях меняется весь пакет сувальд (кодовых пластин) в замке или, 
+                        если модель замка дешёвая, возникает необходимость в покупке аналогичной модели на замену 
+                        с такими же размерами.
+                    </p>
+
+                </div>
+
+        </div>
+
+         <div class="article-section segment">
+                <div class="article-section__container">
+                    <div class="article-section__title-box box-title"> 
+                    <h2 class="article-section__title title anim-title">Ремонт цилиндровых механизмов </h2>
+                    </div>
+
+
+                    <div class="article-section__foto">
+                        <img class="article-section__img-foto" src="../img/repair/відримонтувати-циліндровий-замок.jpg"
+                            alt="">
+                    </div>
+
+                    <p class="article-section__text text-page">
+                        Один из основных замков, которые можно встретить в использовании нашими гражданами, это замок 
+                        со сменным цилиндровым механизмом секретности («личинка», «вставка», «ЦМЗ»). 
+                    </p>
+
+                    <p class="article-section__text text-page">
+                        Цилиндровые механизмы встречаются в разных ценовых сегментах, от известных производителей, 
+                        таких как «Mul-T-lock», «Cisa», «Mottura», «Iseo», «Securemme», «Abloy», «Tokoz», «Tesa», 
+                        «Abus», «Dom», «Evva», «Wilka» и других, с которыми за годы верной службы проблемы возникают редко. 
+                    </p>
+
+                    <p class="article-section__text text-page">
+                        Но также существуют дешевые, некачественные, безымянные модели с английским или 
+                        перфорированным профилем, которые массово поставлялись в нашу страну из Китая.
+                    </p>
+
+                    <p class="article-section__text text-page">
+                        Ситуации, когда ключ застревает в замке или вы не можете открыть замок ключом, 
+                        случаются довольно часто. Обычно это происходит, когда на дверях установлен дешевый 
+                        механизм секретности, в котором детали, изготовленные из некачественных материалов, 
+                        быстро выходят из строя.
+                    </p>
+
+
+
+                    <div class="article-section__box-fotos">
+                        <img class="article-section__img-fotos" src="../img/repair/протизламні-циліндрові-замки.jpg"
+                            alt="Высококачественные цилиндровые замки">
+                        <img class="article-section__img-fotos" src="../img/repair/дешеві-циліндрові-замки.jpg" 
+                        alt="Дешовые цилиндровые замки">
+
+                    </div>
+
+                    <p class="article-section__sub-title sub-title">
+                        Стирание кодовых штифтов в цилиндровых механизмах
+                    </p>
+
+
+                    <p class="article-section__text text-page">
+                        Внутри цилиндра находятся кодовые штифты разной высоты, 
+                        с которыми при введении контактирует ключ.От трения о 
+                        ключ и друг о друга штифты истираются, теряя свои 
+                        первоначальные кодовые размеры, а вместе с ними и 
+                        секретность всего механизма.
+                    </p>
+
+                    <p class="article-section__text text-page color-box border-line">
+                        Сначала при возникновении такой проблемы ключ начинает плохо поворачиваться внутри, а со временем заедает. 
+                        В определенный момент он не сможет открыть двери и пустить вас домой.
+                    </p>
+
+                  
+                    
+                    <div class="article-section__visual-bloc">
+
+                        <div class="article-section__left-box">
+                            <img class="article-section__cartoon-left"
+                                src="../img/repair/робота-циліндрового-механізму.jpg" alt="работа цилиндрового механизма">
+
+                        </div>
+
+
+                        <div class="article-section__rigth-box">
+
+                            <p class="article-section__text text-page">
+                             Такая проблема очень редко встречается с дорогими цилиндровыми механизмами, 
+                              в которых штифты изготавливаются из различных сплавов, устойчивых к истиранию. 
+                              В то же время у китайских моделей, в которых штифты латунные, подобная проблема 
+                              является почти постоянной.
+                            </p>
+                            
+                            <p class="article-section__text text-page"> 
+                             Замена штифтов в дешевых цилиндрах экономически нецелесообразна. Лучше приобрести 
+                             на замену цилиндр той же длины из более дорогого ценового сегмента. Такой цилиндр 
+                             будет иметь существенно лучшие защитные свойства и прослужит намного дольше.
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <p class="article-section__text text-page">
+                        Однако, говоря о дорогих цилиндрах от брендов «Mul-T-lock», «Cisa», «Mottura», «Tesa», 
+                        «Abus», «Dom», «Wilka», в которых кодовые элементы изготовлены из очень качественных 
+                        металлов, с годами эксплуатации таких цилиндров чаще встречается износ самого ключа. 
+                        После диагностики цилиндра мастером для него изготавливается новый дубликат ключа.
+                    </p>
+
+                    <p class="article-section__sub-title sub-title">
+                        Поломка пружины под штифтами
+                    </p>
+
+                    <p class="article-section__text text-page">
+                     Под каждой штифтовой парой внутри цилиндра находится пружина, которая выталкивает их в стартовое 
+                     положение. Бывают случаи, преимущественно в дешевых, а реже в дорогих цилиндрах, когда пружина 
+                     ломается, и одна из штифтовых пар перестает выталкиваться в свое стартовое положение. 
+                     В результате цилиндр перестает открываться ключом. А если пружина сломалась во время 
+                     открывания, высокие кодовые штифты могут заблокировать извлечение ключа.
+                    </p>
+
+                    <p class="article-section__text text-page border-line">
+                       Таким образом, мы получаем ситуацию, когда ключ застрял в замке, а двери остались закрытыми. 
+                       В таком случае нужно вызывать локсмастера, который высверлит сломанный цилиндровый механизм 
+                       и разблокирует двери. 
+                    </p>
+
+                    <p class="article-section__text text-page ">
+                        Однако, если вы вовремя заметите, что ключ не поворачивается в цилиндре, и принесете кодовую 
+                        вставку нам, после диагностики мы сможем заменить неисправную пружину.
+                    </p>
+
+                    <p class="second-section__sub-title sub-title">
+                        Износ кулачка и муфты цилиндра
+                    </p>
+
+                    <p class="article-section__text text-page">
+                        Кулачок – это деталь, которая находится посередине цилиндрового механизма и смещает засов замка 
+                        при его открывании или закрывании. Чтобы сместить кулачок, нужно вставить «родной» ключ в цилиндр, 
+                        который выставит штифты в соответствующий кодовый порядок и протолкнет в кулачок муфту (куплунг).
+                    </p>
+
+                    <p class="article-section__text text-page">
+                        Муфта – это внутренняя деталь цилиндрового механизма секретности, которая входит в кулачок при повороте 
+                        ключом плага цилиндра, передавая от него вращающий момент на кулачок, что позволяет ему смещать засов замка.
+                    </p>
+
+                    <p class="article-section__text text-page color-box border-line">
+                        Вы заметили, что ваш ключ свободно вращается в цилиндре, но засов двери не движется в направлении открывания 
+                        или закрывания? Это один из признаков того, что вышли из строя кулачок или муфта. Таким образом, вращающий 
+                        момент от ключа не передается на засов замка.
+                    </p>
+
+                    <p class="article-section__text text-page ">
+                        Если вас постигла такая неприятность во время открывания дверей, и вы не можете попасть в жилище, придется вызывать 
+                        локсмастера, который высверлит или переломит сердцевину в замке и откроет ваши двери.
+                    </p>
+
+
+                    <p class="article-section__text text-page">
+                        В случае обнаружения этой проблемы стоит обратиться к нам, и мы 
+                        сможем заменить муфту или кулачок, в которых появился износ.
+                    </p>
+
+                    <p class="article-section__text text-page">
+                        У ведущих брендов, таких как «Mul-T-lock», «Evva», «Abus», «Keso», используются более прочные 
+                        материалы для кулачков и муфт (сталь, латунь), что снижает риск выхода из строя по сравнению 
+                        с силуминовыми деталями в бюджетных аналогах.
+                    </p>
+
+                    <p class="article-section__text text-page">
+                        В случае неисправности в недорогой модели ее стоит просто заменить на новый 
+                        цилиндровый механизм, чтобы не оказаться перед закрытыми дверями.
+                    </p>
+
+
+                </div>
+        </div>
+
+        <div class="last-section segment">
+                <div class="last-section__container ">
+                    <div class="last-section__title-box box-title"> 
+                    <h2 class="last-section__title title anim-title">
+                        Перекодировка цилиндров 
+                    </h2>
+                    </div>
+
+                    <p class="last-section__text text-page">
+                        Также к нам вы можете обратиться за перекодировкой вашего цилиндрового механизма 
+                        секретности. Современные патентованные цилиндровые механизмы от брендов: «Mul-T-lock», 
+                        «Abloy», «Tokoz», «Abus», «Viro», «Dom», «Wilka» имеют очень важное преимущество 
+                        — их можно перекодировать.
+
+
+
+                    </p>
+                    <div class="last-section__content">
+
+
+
+                        <div class="last-section__visual-blok">
+
+                            <div class="last-section__visual-left">
+
+
+                                <p class="last-section__text text-page">
+                                    Перекодировка — это замена только кодовых элементов в цилиндре без физической замены 
+                                    корпуса и плага (детали, которая поворачивается ключом). Основная цель перекодировки 
+                                    — сделать недействительным старый комплект ключей. Соответственно, для обновленной 
+                                    кодовой комбинации изготавливается новый комплект ключей. Таким образом, старый ключ 
+                                    больше не сможет открыть ваш замок, а вашими рабочими ключами станет новый комплект.
+                                </p>
+
+                                <p class="last-section__text text-page">
+                                    Или создается «Мастер-система» — это когда несколько цилиндров настраиваются под один и тот 
+                                    же ключ. Все они имеют одинаковую кодовую комбинацию, поэтому клиент может открывать все 
+                                    двери одним ключом, где установлены эти цилиндры.
+                                </p>
+
+                            </div>
+
+                            <div class="last-section__visual-rigth">
+                                <img class="last-section__img-visual" src="../img/repair/перекодування-циліндра.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+
+
+                        <p class="last-section__sub-title sub-title">
+                            Перекодировка цилиндра необходима в случаях:
+                        </p>
+
+                        <div class="last-section__list">
+
+
+                            <ul>
+                                <li class="last-section__elem-list service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    износ штифтов в<span class="list-cut__ziro-ua"> 
+                                        цилиндровом</span> механизме;
+                                </li>
+
+                                <li class="last-section__elem-list service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    утери ключей<span class="list-cut__one-ru"> чтобы предотвратить доступ в квартиру посторонних</span>;
+                                </li>
+
+                                <li class="last-section__elem-list  service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    ключ передавался чужим<span class="list-cut__two-ua"> (временным работникам), 
+                                    которые могли сделать дубликат</span>;
+                                </li>
+
+                                <li class="last-section__elem-list  service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    смены собственников<span class="list-cut__three-ua"> или арендаторов: 
+                                    у предыдущих жильцов может остаться копия ключа.</span>;
+
+                                </li>
+
+                                <li class="last-section__elem-list  service__list-text">
+                                    <img class="check-icn" src="../img/icon/chek.svg" alt="">
+                                    создание цилиндров под один ключ.
+                                    
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="last-section__end-box"> 
+                    <p class="last-section__text--end text-page selecting-color">
+                        Отремонтировать замок в городе — это правильное решение, которое позволяет выполнить 
+                        целевой ремонт, заменив конкретные изношенные узлы в механизме, что сэкономит владельцу 
+                        средства и продлит срок службы его замка. Такой подход позволяет избежать полной замены 
+                        замка, что часто является более дорогим вариантом. Кроме того, своевременное устранение 
+                        неисправностей повышает уровень безопасности и надежности использования.
+                    </p>
+                    </div>
+
+
+                </div>
+        </div>  
+
+         <!-- Карта -->
+            <div class="map segment">
+                <div class="map__container">
+                    <div class="map__box-title box-title">
+                        <h3 class="map__title title anim-title">Наши контакты</h3>
+                    </div>
+                    <div class="map__block">
+                        <iframe class="map__box"
+                                title="Компанії на карте Города"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d643.2350615650622!2d24.02747462187419!3d49.8435802687347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1745330863712!5m2!1sru!2sua"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="map__shop-contact">
+                            <div class="map__logo-contact">
+                                <img class="map__img-contact" src="../img/logo/Lcolor.svg" alt="">
+                            </div>
+                            <div class="map__info-contact">
+                                <div class="map__left-cont">
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-smartphone.svg" alt="">
+                                            <p class="map__sub-title">Сервис Название</p>
+                                        </div>
+                                        <div class="map__text-info">
+                                            <a class="map__text" href="tel:+380961234567">+38 (096) 123-45-67</a>
+                                        </div>
+                                    </div>
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-mail.svg" alt="">
+                                            <p class="map__sub-title">Электронна почта</p>
+                                        </div>
+                                        <div class="map__text-info">
+                                            <a class="map__text" href="mailto:zverinalev@gmail.com">zverinalev@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-navigation.svg" alt="">
+                                            <p class="map__sub-title">Наш адрес</p>
+                                        </div>
+                                        <div class="map__text-info">
+                                            <p class="map__text">
+                                                г.Город ул.<span class="map__del-text">Название</span>Название 555
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="map__right-cont">
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-smartphone.svg" alt="">
+                                            <p class="map__sub-title">Вскрытие замков</p>
+                                        </div>
+                                        <div class="map__text-info">
+                                            <a class="map__text" href="tel:+380961234567">+38 (096) 123-45-67</a>
+                                        </div>
+                                    </div>
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-calendar.svg" alt="">
+                                            <p class="map__sub-title">График работы</p>
+                                        </div>
+                                        <div class="map__text-info">
+                                            <p class="map__text">
+                                                Пн-Пт выходной Сб-Вс
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="map__item">
+                                        <div class="map__box-cont">
+                                            <img class="map__img-icon" src="../img/icon/map-calendar.svg" alt="">
+                                            <p class="map__sub-title">Время работы</p>
+                                        </div>
+                                        <div class="map__time-info">
+                                            <p class="map__text">
+                                                C 10:00 до 19:00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Боковые социалки -->
+            <div class="social">
+                <button class="social__write-us">
+                    <img class="social__img-write-us" src="../img/icon/Написати-нам.png" alt="">
+                </button>
+                <button class="social__close-btm">
+                    <img class="social__img-close" src="../img/icon/cross.png" alt="">
+                </button>
+                <div class="social__links">
+                    <a href="viber://chat?number=+380932443209">
+                        <img class="social__img-link" src="../img/icon/viber.png" alt="">
+                    </a>
+                    <a href="https://t.me/+380932443209">
+                        <img class="social__img-link" src="../img/icon/telegram.png" alt="">
+                    </a>
+                    <a href="https://wa.me/+380932443209">
+                        <img class="social__img-link" src="../img/icon/whatsapp.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="social__img-link" src="../img/icon/signal.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__all-info">
+                    <div class="footer__about-company">
+                        <img class="footer__logo-company" src="../img/logo/LG.svg" alt="">
+                        <div class="footer__inform-box">
+                            <p class="footer__text-company"> Название предлагает услуги:</p>
+                            <ul>
+                                <li class="footer__servict-list">вскрытие замков</li>
+                                <li class="footer__servict-list">вскрытие сейфов</li>
+                                <li class="footer__servict-list">вскрытие авто замков</li>
+                                <li class="footer__servict-list">изготовление ключей</li>
+                                <li class="footer__servict-list">ремонт замков</li>
+                                <li class="footer__servict-list">продажа замков </li>
+                                <li class="footer__servict-list">продаж сейфов</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__social-net">
+                        <p class="footer__name-social">Социальные сети</p>
+                        <div class="footer__social-box">
+                            <a href="viber://chat?number=+380932443209">
+                                <img class="footer__icon-social" src="../img/icon/viber.png" alt="">
+                            </a>
+                            <a href="https://t.me/+380932443209">
+                                <img class="footer__icon-social" src="../img/icon/telegram.png" alt="">
+                            </a>
+                            <a href="https://wa.me/+380932443209">
+                                <img class="footer__icon-social" src="../img/icon/whatsapp.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="footer__icon-social" src="../img/icon/signal.png" alt="">
+                            </a>
+                            <a href="https://www.facebook.com/vzaluzhnyi?locale=ru_RU">
+                                <img class="footer__icon-social" src="../img/icon/facebook.png" alt="">
+                            </a>
+                            <a href="https://www.youtube.com/@alexanderokunevskyy">
+                                <img class="footer__icon-social" src="../img/icon/youtube.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__contact-company">
+                        <p class="footer__name-cont">Контакты</p>
+                        <ul class="footer__list-contact">
+                            <li class="footer__item-list">
+                                <img class="footer__icon-contact" src="../img/icon/footer-smartphone.svg" alt="">
+                                <a class="footer__contact-text" href="tel:+380961234567">+38 (096) 123-45-67</a>
+                            </li>
+                            <li class="footer__item-list">
+                                <img class="footer__icon-contact" src="../img/icon/footer-mail.svg" alt="">
+                                <a class="footer__contact-text" href="mailto:zverinalev@gmail.com">zverinalev@gmail.com</a>
+                            </li>
+                            <li class="footer__item-list">
+                                <img class="footer__icon-contact" src="../img/icon/footer-navigation.svg" alt="">
+                                <span class="footer__contact-text">
+                                    м.Город ул.Название<span class="footer__row-text">Название 555</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__decoration-line">
+                    <span class="footer__line"></span>
+                    <p class="footer__autor">© 2025 ZverinaLev production</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Підключення JS -->
+    <script src="../js/script.js" defer></script>
+</body>
+</html>
