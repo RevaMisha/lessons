@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <title>Телефон</title>
+  <ellipse cx="74.5" cy="75" rx="72.5" ry="68" fill="#ff6e30"/>
+  <g fill="none" stroke="#000" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32.2 53.9 Q74.5 20.8 116.8 53.9 Q120 56.4 117.1 59.1 L109.1 66 Q107 68 104.5 66.2 L94.6 59 Q92.8 57.8 92.5 55.7 L91.3 47.2 Q74.5 41 57.7 47.2 L56.5 55.7 Q56.2 57.8 54.4 59 L44.5 66.2 Q42 68 39.9 66 L31.9 59.1 Q29 56.4 32.2 53.9 Z"/>
+    <path d="M59 65 H90 Q94 65 96.3 69 L109.6 90 Q111 92 111 95 V103 Q111 108 106 108 H43 Q38 108 38 103 V95 Q38 92 39.4 90 L52.7 69 Q55 65 59 65 Z"/>
+  </g>
+  <g fill="#000">
+    <circle cx="63" cy="77" r="4"/><circle cx="74.5" cy="77" r="4"/><circle cx="86" cy="77" r="4"/>
+    <circle cx="63" cy="86.5" r="4"/><circle cx="74.5" cy="86.5" r="4"/><circle cx="86" cy="86.5" r="4"/>
+    <circle cx="63" cy="96" r="4"/><circle cx="74.5" cy="96" r="4"/><circle cx="86" cy="96" r="4"/>
+  </g>
+</svg>

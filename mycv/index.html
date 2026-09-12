@@ -8,7 +8,10 @@
       <link rel="icon" href="imeg/Fav.png" type="image/x-icon">
       <title>Резюме Реви Михайла </title>
       <meta name="description" content="Резюме представлено на вакансію junior seo оптимизатор.">
-      
+
+      <link rel="alternate" hreflang="uk" href="index.html">
+      <link rel="alternate" hreflang="en" href="en/index.html">
+
       <link
          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap"
          rel="stylesheet">
@@ -18,22 +21,33 @@
    </head>
    <body>
       <div class="wrapper">
+
+         
       
       <header class="header">
-         <div class="header__logo">
-            <img class="header__img-logo" src="imeg/logoR.png" alt="mylogo">
-            <p>Reva Misha</p>
-         </div>
-         <div class="header__navigation">
-            <input type="checkbox" class="header__toggle-menu">
-            <div class="header__gamburger"></div>
-            <ul class="header__menu">
-               <li><a href="#learn">Навчання</a></li>
-               <li><a href="#jobs">Трудовий досвід</a></li>
-               <li><a href="#seo">Seo </a></li>
-               <li><a href="#web">Веб розробка</a></li>
-               <li><a href="#cont">Контакти </a></li>
-            </ul>
+         <div class="header__container">
+            <div class="header__logo">
+               <img class="header__img-logo" src="imeg/minLogo.png" alt="mylogo">
+               <p>Reva Misha</p>
+            </div>
+            <div class="header__navigation">
+               <input type="checkbox" class="header__toggle-menu" aria-label="Відкрити або закрити меню">
+               <div class="header__gamburger"></div>
+               <ul class="header__menu">
+                  <li><a href="#learn">Навчання</a></li>
+                  <li><a href="#jobs">Трудовий досвід</a></li>
+                  <li><a href="#seo">Seo </a></li>
+                  <li><a href="#web">Веб розробка</a></li>
+                  <li><a href="#cont">Контакти </a></li>
+               </ul>
+            </div>
+            <details class="header__lang">
+               <summary class="header__lang-current" aria-label="Вибір мови">UK</summary>
+               <ul class="header__lang-list">
+                  <li><a class="header__lang-link is-active" href="index.html" lang="uk">UK <span>Українська</span></a></li>
+                  <li><a class="header__lang-link" href="en/index.html" lang="en" hreflang="en">EN <span>English</span></a></li>
+               </ul>
+            </details>
          </div>
       </header>
       
@@ -75,18 +89,19 @@
                      <div class="about-paginetion swiper-pagination"></div>
                      <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                           <img class="slide-img" src="imeg/Ran.jpg" alt="Я">
+                           <img class="slide-img" src="imeg/Ran.webp" alt="Я">
                         </div>
                         <div class="swiper-slide">
-                           <img class="slide-img" src="imeg/Dew.jpg" alt="Розробляю">
+                           <img class="slide-img" src="imeg/Dew.webp" alt="Розробляю">
                         </div>
                         <div class="swiper-slide">
-                           <img class="slide-img" src="imeg/Sit.jpg" alt="Сижу">
+                           <img class="slide-img" src="imeg/Sit.webp" alt="Практикую">
                         </div>
                      </div>
                   </div>
                </div>
-                  </div>
+                  
+            </div>
                </div>
                </div>
       </div>
@@ -101,7 +116,7 @@
                <div class="learning__cont">
                   
                <div class="learning__foto">
-                  <img class="learning__img-foto" src="imeg/Mybooks.jpg" alt="Навчання">
+                  <img class="learning__img-foto" src="imeg/Mybooks.webp" alt="Навчання">
                </div>
                
                <div class="learning__informatio">
@@ -109,24 +124,27 @@
                
                 <div class="learning__wrapper">
 
-                  
-                     <p class="learning__info-text text"><span>2001р</span> вище професійне училище №36 м. Львова за
+                     <p class="learning__info-text text"><span>2001р</span> Закінчив вище професійне училище №36 м. Львова за
                         спеціальністю «Виробництво м’ясних продуктів» і здобув кваліфікацію технік-технолог.
                      </p>
-                     <br>
-                     <p class="learning__info-text text"><span>2008р</span> МАУП за спеціальністю «Трудове та комерційне
+
+                     <p class="learning__info-text text"><span>2005р</span> ПП «Інститут ринкових професій», м. Львів. Закінчив семимісячний курс «Практична психологія та іміджологія».
+                     </p>
+
+                     <p class="learning__info-text text"><span>2008р</span> Закінчив МАУП за спеціальністю «Трудове та комерційне
                         право» та отримав кваліфікацію бакалавр права.
                      </p>
-                     <br>
-                     <p class="learning__info-text text"><span>2020р</span> чотирьох місячні курси з веб маркетингу від
-                        компанії Logos IT Academy де отримав базовий досвід в напрямках : SMM, SEO, PPC
-                        контекстна
-                        реклама.
+
+                     <p class="learning__info-text text"><span>2020р</span> Пройшов чотирьох місячні курси з веб маркетингу від
+                        компанії Logos IT Academy де отримав базовий досвід в напрямках : SMM, SEO, PPC контекстна реклама.
                      </p>
-                     <br>
-                     <p class="learning__info-text text"><span>2023р</span> чотирьох місячні онлайн курси з верстки, та
-                        отримав базові практичні знання роботи з кодом HTML та CSS, основами JS.
+
+                     <p class="learning__info-text text"><span>2023р</span> Закінчив чотиримісячні онлайн-курси з вебверстки, під час яких практично працював з HTML і CSS та опанував базові основи JavaScript.
                      </p>
+
+                     <p class="learning__info-text text"><span>2026р</span> Закінчив чотиримісячний онлайн-курс з JavaScript. Поглибив практичні знання JavaScript та навички роботи з кодом.
+                     </p>
+
                 </div>
                
                </div>
@@ -136,27 +154,46 @@
             </div>
       </div>
          
-      <div class="diploms__section section">
-            <div class="diploms__container">
-               <div class="diploms__title-box title-box">
-                  <h3 class="diploms__title title" >Дипломи</h3>
-               </div>
-               <div class="diploms__box">
-                  <div class="diplom__atem">
-                     <img class="diplom__atem-img" src="imeg/PTU.jpg" alt="ptu">
-                  </div>
-                  <div class="diplom__atem">
-                     <img class="diplom__atem-img" src="imeg/Maup.jpg" alt="maup">
-                  </div>
-                  <div class="diplom__atem">
-                     <img class="diplom__atem-img" src="imeg/Marketing.jpg" alt="marketing">
-                  </div>
-                  <div class="diplom__atem">
-                     <img class="diplom__atem-img" src="imeg/htmlscc.jpg" alt="htmlscc">
-                  </div>
-               </div>
+      <div class="document__section  section">
+        
+         <div class="document__container">
+            <div class="document__title-box title-box">
+               <h2 class="document__title title">Дипломи</h2>
             </div>
-       </div>
+
+            <div class="document__carts-box">
+               
+               
+
+                 <div class="document__cart">
+                  <img src="imeg/doc/ptu.webp" alt="vmu" class="document__img-cart">
+               </div>
+
+                 <div class="document__cart">
+                  <img src="imeg/doc/maup.webp" alt="maup" class="document__img-cart">
+               </div>
+
+                 <div class="document__cart">
+                  <img src="imeg/doc/psychologist.webp" alt="psychologist" class="document__img-cart">
+               </div>
+
+                 <div class="document__cart">
+                  <img src="imeg/doc/web-marketing.webp" alt="seo" class="document__img-cart">
+               </div>
+
+                 <div class="document__cart">
+                  <img src="imeg/doc/htmlcss.webp" alt="coding" class="document__img-cart">
+               </div>
+
+               <div class="document__cart">
+                  <img src="imeg/doc/js.webp" alt="js" class="document__img-cart">
+               </div>
+
+            </div>
+         
+         </div>
+
+      </div>
          
       <div class="job__section section" id="jobs">
             <div class="job__container">
@@ -166,7 +203,7 @@
                <div class="job__boxes">
                   <div class="job__unit">
                      <div class="job__icon">
-                        <img class="job__img-icon" src="imeg/icon/sausages.png" alt="М'ясна продукція">
+                        <img class="job__img-icon" src="imeg/icon/sausages.svg" alt="М'ясна продукція">
                      </div>
                      <div class="job__subtitle">
                         <p class="job__subtitle" >М’ясний цех</p>
@@ -184,7 +221,7 @@
                   </div>
                   <div class="job__unit">
                      <div class="job__icon">
-                        <img class="job__img-icon" src="imeg/icon/spick.png" alt="Музичні апарати">
+                        <img class="job__img-icon" src="imeg/icon/spick.svg" alt="Музичні апарати">
                      </div>
                      <div class="job__subtitle">
                         <p class="job__subtitle">Компанія «Cпікарт»</p>
@@ -202,7 +239,7 @@
                   </div>
                   <div class="job__unit">
                      <div class="job__icon">
-                        <img class="job__img-icon" src="imeg/icon/keys.png" alt="Локсмітірг">
+                        <img class="job__img-icon" src="imeg/icon/keys.svg" alt="Локсмітірг">
                      </div>
                      <div class="job__name">
                         <p class="job__subtitle">Локсмітінг</p>
@@ -220,7 +257,7 @@
                   </div>
                   <div class="job__unit">
                      <div class="job__icon">
-                        <img class="job__img-icon" src="imeg/icon/bay.png" alt="Продажі">
+                        <img class="job__img-icon" src="imeg/icon/bay.svg" alt="Продажі">
                      </div>
                      <div class="job__name">
                         <p class="job__subtitle">Веб продажі </p>
@@ -237,7 +274,7 @@
                   </div>
                </div>
             </div>
-      </div>
+      </div> 
          
       <div class="myseo__section section" id="seo">
             <div class="myseo__container">
@@ -288,7 +325,7 @@
                      <div class="myseo__cart">
                         <div class="myseo__top-cart">
                            <div class="myseo__img-cart">
-                              <img class="myseo__icon" src="imeg/icon/Frog.png" alt="Frog">
+                              <img class="myseo__icon" src="imeg/icon/Frog.webp" alt="Frog">
                            </div>
                            <div class="myseo__subtitle-box">
                               <p class="myseo__name-subtitle">Screaming Frog</p>
@@ -304,7 +341,7 @@
                      <div class="myseo__cart">
                         <div class="myseo__top-cart">
                            <div class="myseo__img-cart">
-                              <img class="myseo__icon" src="imeg/icon/serp.png" alt="serpstat">
+                              <img class="myseo__icon" src="imeg/icon/serp.webp" alt="serpstat">
                            </div>
                            <div class="myseo__subtitle-box">
                               <p class="myseo__name-subtitle">Serpstat</p>
@@ -320,7 +357,7 @@
                      <div class="myseo__cart">
                         <div class="myseo__top-cart">
                            <div class="myseo__img-cart">
-                              <img class="myseo__icon" src="imeg/icon/google_ads.png" alt="Google ads">
+                              <img class="myseo__icon" src="imeg/icon/google_ads.webp" alt="Google ads">
                            </div>
                            <div class="myseo__subtitle-box">
                               <p class="myseo__name-subtitle" >Google ads</p>
@@ -336,7 +373,7 @@
                      <div class="myseo__cart">
                         <div class="myseo__top-cart">
                            <div class="myseo__img-cart">
-                              <img class="myseo__icon" src="imeg/icon/Google_Analytics.png" alt="Google_Analytics">
+                              <img class="myseo__icon" src="imeg/icon/Google_Analytics.webp" alt="Google_Analytics">
                            </div>
                            <div class="myseo__subtitle-box">
                               <p class="myseo__name-subtitle" >Google Analytics</p>
@@ -351,7 +388,7 @@
                      <div class="myseo__cart">
                         <div class="myseo__top-cart">
                            <div class="myseo__img-cart">
-                              <img class="myseo__icon" src="imeg/icon/Google_Search.png" alt="Google Search.png">
+                              <img class="myseo__icon" src="imeg/icon/Google_Search.webp" alt="Google Search.png">
                            </div>
                            <div class="myseo__subtitle-box">
                               <p class="myseo__name-subtitle" >Google Search</p>
@@ -367,7 +404,7 @@
                      <div class="myseo__cart">
                         <div class="myseo__top-cart">
                            <div class="myseo__img-cart">
-                              <img class="myseo__icon" src="imeg/icon/text.ru.png" alt="Text ru">
+                              <img class="myseo__icon" src="imeg/icon/text.ru.webp" alt="Text ru">
                            </div>
                            <div class="myseo__subtitle-box">
                               <p class="myseo__name-subtitle">Text ru</p>
@@ -383,7 +420,7 @@
                      <div class="myseo__cart">
                         <div class="myseo__top-cart">
                            <div class="myseo__img-cart">
-                              <img class="myseo__icon" src="imeg/icon/Photoshop.png" alt="Photoshop">
+                              <img class="myseo__icon" src="imeg/icon/Photoshop.webp" alt="Photoshop">
                            </div>
                            <div class="myseo__subtitle-box">
                               <p class="myseo__name-subtitle">Photoshop</p>
@@ -400,7 +437,7 @@
                      <div class="myseo__cart">
                         <div class="myseo__top-cart">
                            <div class="myseo__img-cart">
-                              <img class="myseo__icon" src="imeg/icon/wordpress.png" alt="Wordpress">
+                              <img class="myseo__icon" src="imeg/icon/wordpress.webp" alt="Wordpress">
                            </div>
                            <div class="myseo__subtitle-box">
                               <p class="myseo__name-subtitle">Wordpress</p>
@@ -445,19 +482,177 @@
                </div>
                <div class="mydevelop__program">
                   <div class="mydevelop__icon-program">
-                     <img src="imeg/icon/Visual_Studio_Code.png" alt="Visual_Studio_Code">
+                     <img src="imeg/icon/Visual_Studio_Code.webp" alt="Visual_Studio_Code">
                   </div>
                   <div class="mydevelop__icon-program">
-                     <img src="imeg/icon/html.png" alt="HTML">
+                     <img src="imeg/icon/html.webp" alt="HTML">
                   </div>
                   <div class="mydevelop__icon-program">
-                     <img src="imeg/icon/css.png" alt="CSS">
+                     <img src="imeg/icon/css.webp" alt="CSS">
                   </div>
                   <div class="mydevelop__icon-program">
-                     <img src="imeg/icon/js.png" alt="JS">
+                     <img src="imeg/icon/js.webp" alt="JS">
                   </div>
                </div>
             </div>
+      </div>
+
+      <div class="ai__section section">
+         <div class="ai__container">
+            <div class="ai__title-box title-box">
+
+              <h2 class="ai__title title">
+               Використовую ШІ для
+              </h2> 
+
+            </div>
+
+             <div class="ai__panels-box">
+
+               <div class="ai__panel">
+                  <img class="ai__logo ai__logo--mono" src="imeg/icon/chatgpt.svg" alt="Логотип ChatGPT" width="64" height="64">
+                  <div class="ai__subtitle-panel">
+                     ChatGPT Plus
+                  </div>
+
+                  <div class="ai__text-panel">
+                     Cтворення оригінального візуального контенту, генерація ідей, робота з текстом та структурою сторінок.
+                  </div>
+
+
+
+
+
+               </div>
+
+               <div class="ai__panel">
+                  <img class="ai__logo ai__logo--mono" src="imeg/icon/codex.svg" alt="Логотип Codex" width="64" height="64">
+                  <div class="ai__subtitle-panel">
+                     Codex
+                  </div>
+
+                  <div class="ai__text-panel">
+                    Перевірка, аналіз і редагування HTML, CSS та JavaScript-коду, пошук помилок і покращення структури коду.
+                  </div>
+               </div>
+
+               <div class="ai__panel">
+                  <img class="ai__logo" src="imeg/icon/claude.svg" alt="Логотип Claude" width="64" height="64">
+                  <div class="ai__subtitle-panel">
+                     Claude
+                  </div>
+
+                  <div class="ai__text-panel">
+                    Cтворення SEO-текстів, робота із семантикою, кластеризація ключових запитів і підготовка контентної структури.
+                  </div>
+               </div>
+
+               <div class="ai__panel">
+                  <img class="ai__logo" src="imeg/icon/gemini.svg" alt="Логотип Gemini" width="64" height="64">
+                  <div class="ai__subtitle-panel">
+                     Gemini
+                  </div>
+
+                  <div class="ai__text-panel">
+                   Дослідження інформації, перевірка фактів, аналіз великих обсягів даних і робота з документами Google
+                  </div>
+               </div>
+
+             </div>
+
+
+         </div>
+      </div>
+
+      <div class="skills__section section">
+
+         <div class="skills__container">
+
+            <div class="skills__title-box title-box">
+
+              <h3 class="skills__title title">
+               Розмовляю
+              </h3> 
+
+            </div>
+
+            <div class="skills__items-box">
+
+               
+                          <div class="skills__leng-item">
+
+                           <div class="skills__subtitlt-leng">
+                              Українська
+                           </div>
+
+                           <p class="skills__text-leng">
+
+                              Рідна мова, вільно говорю, читаю та пишу, створюю тексти.
+
+                           </p>
+
+
+               
+                         </div>
+
+                         <div class="skills__leng-item">
+
+                           <div class="skills__subtitlt-leng">
+                              Польска
+                           </div>
+
+                           <p class="skills__text-leng">
+
+                              Впевнений рівень розуміння. Добре розумію усну мову, читаю, розмовна практика слабша.
+
+                           </p>
+
+
+               
+                         </div>
+
+                          <div class="skills__leng-item">
+
+                           <div class="skills__subtitlt-leng">
+                              Англійська
+                           </div>
+
+                           <p class="skills__text-leng">
+
+                              Рівень A2+. Читаю, розумію базову мову та спілкуватися на прості теми.
+                             
+
+                           </p>
+
+
+               
+                         </div>
+
+                            <div class="skills__leng-item">
+
+                           <div class="skills__subtitlt-leng">
+                              Російська
+                           </div>
+
+                           <p class="skills__text-leng">
+
+                              Вільно володію: читаю, пишу, спілкуюся при потребі.
+
+                           </p>
+
+
+               
+                         </div>
+
+            
+            
+            </div>
+
+
+
+
+         </div>
+
       </div>
       
       <div class="galeria__section section">
@@ -471,7 +666,15 @@
                      <div class="swiper-slide  allpage__swiper-slide">
                         <div class="allpage__slide-skin">
                            <a href="https://revamisha.github.io/lessons/ast/">
-                           <img class="galeria__slider-img" src="imeg/Gelios.jpg" alt="Gelios">
+                           <img class="galeria__slider-img" src="imeg/Gelios.webp" alt="Gelios">
+                           </a>
+                        </div>
+                     </div>
+
+                      <div class="swiper-slide">
+                        <div class="allpage__slide-skin">
+                           <a href="https://revamisha.github.io/lessons/taro/">
+                           <img class="galeria__slider-img" src="imeg/taro.webp" alt="Сайт таро">
                            </a>
                         </div>
                      </div>
@@ -479,7 +682,7 @@
                      <div class="swiper-slide">
                         <div class="allpage__slide-skin">
                            <a href="https://revamisha.github.io/lessons/psiho/">
-                           <img class="galeria__slider-img" src="imeg/psiho.jpg" alt="hotdog">
+                           <img class="galeria__slider-img" src="imeg/psiho.webp" alt="Сайт психолога">
                            </a>
                         </div>
                      </div>
@@ -487,7 +690,7 @@
                      <div class="swiper-slide">
                         <div class="allpage__slide-skin">
                            <a href="https://revamisha.github.io/lessons/hotdog/">
-                           <img class="galeria__slider-img" src="imeg/Hotdog.jpg" alt="hotdog">
+                           <img class="galeria__slider-img" src="imeg/Hotdog.webp" alt="hotdog">
                            </a>
                         </div>
                      </div>
@@ -495,7 +698,7 @@
                      <div class="swiper-slide">
                         <div class="allpage__slide-skin">
                            <a href="https://revamisha.github.io/lessons/web/">
-                           <img class="galeria__slider-img" src="imeg/Digital.jpg" alt="hotdog">
+                           <img class="galeria__slider-img" src="imeg/Digital.webp" alt="Сайт Digital">
                            </a>
                         </div>
                      </div>
@@ -503,7 +706,7 @@
                      <div class="swiper-slide">
                         <div class="allpage__slide-skin">
                            <a href="https://revamisha.github.io/lessons/vense/">
-                           <img class="galeria__slider-img" src="imeg/Vense.jpg" alt="Vense">
+                           <img class="galeria__slider-img" src="imeg/Vense.webp" alt="Vense">
                            </a>
                         </div>
                      </div>
@@ -511,14 +714,14 @@
                      <div class="swiper-slide">
                         <div class="allpage__slide-skin">
                            <a href="https://revamisha.github.io/lessons/shop/">
-                           <img class="galeria__slider-img" src="imeg/Tail.jpg" alt="Tail">
+                           <img class="galeria__slider-img" src="imeg/Tail.webp" alt="Tail">
                            </a>
                         </div>
                      </div>
                      <div class="swiper-slide">
                         <div class="allpage__slide-skin">
                            <a href="https://revamisha.github.io/lessons/sweden/">
-                           <img class="galeria__slider-img" src="imeg/sweden.jpg" alt="Sweden">
+                           <img class="galeria__slider-img" src="imeg/sweden.webp" alt="Sweden">
                            </a>
                         </div>
                      </div>
@@ -537,7 +740,7 @@
                      <div class="contact__atems">
                         <div class="contact__unit">
                            <div class="contact__top-unit">
-                              <img src="imeg/icon/Site.png" alt="site">
+                              <img src="imeg/icon/Site.svg" alt="site">
                               <div class="contact__inform">
                                  <p class="contact__name-icon">Адреса</p>
                                  <p class="contact__namber">м. Львів</p>
@@ -546,7 +749,7 @@
                         </div>
                         <div class="contact__unit">
                            <div class="contact__top-unit">
-                              <img src="imeg/icon/Phon.png" alt="phone">
+                              <img src="imeg/icon/Phon.svg" alt="phone">
                               <div class="contact__inform">
                                  <p class="contact__name-icon">Телефон</p>
                                  <a class="contact__namber" href="tel:+380932443209">+38 093 244 32 09 </a>
@@ -555,7 +758,7 @@
                         </div>
                         <div class="contact__unit">
                            <div class="contact__top-unit">
-                              <img src="imeg/icon/Teleg.png" alt="telegram">
+                              <img src="imeg/icon/Teleg.svg" alt="telegram">
                               <div class="contact__inform">
                                  <p class="contact__name-icon">Телеграм</p>
                                  <a class="contact__namber" href="https://t.me/zverinalev">@zverinalev</a>
@@ -564,7 +767,7 @@
                         </div>
                         <div class="contact__unit">
                            <div class="contact__top-unit">
-                              <img src="imeg/icon/Mail.png" alt="mail">
+                              <img src="imeg/icon/Mail.svg" alt="mail">
                               <div class="contact__inform">
                                  <p class="contact__name-icon">Пошта</p>
                                  <a class="contact__namber" href="mailto:zverinalev@gmail.com">zverinalev@gmail.com </a>
@@ -581,13 +784,16 @@
                   </div>
                </div>
        </div>
+      
       </main>
+      
       <footer class="footer">
       <div class="footer-text">
       <p>ZverinaLev production</p>
       </div>
       </footer>
       </div>
+      
       <script src="swiper/swiper-bundle.min.js"></script>
       <script src="js/script.js"></script>
    </body>
