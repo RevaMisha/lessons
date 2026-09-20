@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="55%" r="50%">
+      <stop offset="0" stop-color="#ff7a1a" stop-opacity=".55"/>
+      <stop offset=".55" stop-color="#ff7a1a" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1c1c"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#ff7a1a"/>
+    </linearGradient>
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M18 0H0v18" stroke="#ff7a1a" stroke-opacity=".08" fill="none"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <style>
+      .float{animation:fl 7s ease-in-out infinite}
+      .float.l{animation-delay:-2s}.float.r{animation-delay:-4s}
+      @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+      .tw{animation:tw 3s ease-in-out infinite}
+      .tw:nth-child(2n){animation-delay:-1s}.tw:nth-child(3n){animation-delay:-2s}
+      @keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
+      .spin{transform-origin:320px 330px;animation:sp 60s linear infinite}
+      @keyframes sp{to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <circle cx="320" cy="350" r="290" fill="url(#glow)"/>
+
+  <g class="spin" stroke="#ff7a1a" stroke-opacity=".35" fill="none">
+    <circle cx="320" cy="330" r="250" stroke-dasharray="3 9"/>
+    <circle cx="320" cy="330" r="212" stroke-opacity=".18"/>
+    <g stroke-opacity=".5">
+      <path d="M320 80v14M320 566v14M70 330h14M556 330h14"/>
+      <path d="M143 153l10 10M487 507l10 10M497 153l-10 10M153 507l-10 10"/>
+    </g>
+  </g>
+
+  <g fill="#fff">
+    <circle class="tw" cx="90" cy="120" r="2"/>
+    <circle class="tw" cx="560" cy="90" r="1.6"/>
+    <circle class="tw" cx="600" cy="420" r="2.2"/>
+    <circle class="tw" cx="60" cy="470" r="1.8"/>
+    <circle class="tw" cx="140" cy="590" r="1.4"/>
+    <circle class="tw" cx="520" cy="580" r="2"/>
+    <circle class="tw" cx="470" cy="40" r="1.4"/>
+    <circle class="tw" cx="30" cy="290" r="1.2"/>
+  </g>
+
+  <!-- left card: the moon -->
+  <g class="float l" transform="rotate(-18 200 360)">
+    <rect x="120" y="190" width="160" height="250" rx="14" fill="#ff7a1a" opacity=".5" filter="url(#soft)"/>
+    <rect x="120" y="190" width="160" height="250" rx="14" fill="url(#card)" stroke="url(#gold)" stroke-width="2"/>
+    <rect x="132" y="202" width="136" height="226" rx="9" fill="url(#grid)" stroke="#ff7a1a" stroke-opacity=".35"/>
+    <path d="M225 260a44 44 0 1 0 0 88 36 36 0 1 1 0-88z" fill="url(#gold)"/>
+    <path d="M160 385h80" stroke="#ff7a1a" stroke-opacity=".6"/>
+    <path d="M160 395h50" stroke="#ff7a1a" stroke-opacity=".3"/>
+    <text x="200" y="415" text-anchor="middle" font-family="monospace" font-size="11" letter-spacing="3" fill="#ffb347">XVIII</text>
+  </g>
+
+  <!-- right card: the star -->
+  <g class="float r" transform="rotate(18 440 360)">
+    <rect x="360" y="190" width="160" height="250" rx="14" fill="#ff7a1a" opacity=".5" filter="url(#soft)"/>
+    <rect x="360" y="190" width="160" height="250" rx="14" fill="url(#card)" stroke="url(#gold)" stroke-width="2"/>
+    <rect x="372" y="202" width="136" height="226" rx="9" fill="url(#grid)" stroke="#ff7a1a" stroke-opacity=".35"/>
+    <path d="M440 250l9 34 34 9-34 9-9 34-9-34-34-9 34-9z" fill="url(#gold)"/>
+    <path d="M440 270l4 17 17 4-17 4-4 17-4-17-17-4 17-4z" fill="#0a0a0a"/>
+    <circle cx="410" cy="360" r="2.5" fill="#ffb347"/><circle cx="470" cy="352" r="2" fill="#ffb347"/><circle cx="445" cy="375" r="1.6" fill="#ffb347"/>
+    <path d="M400 385h80" stroke="#ff7a1a" stroke-opacity=".6"/>
+    <text x="440" y="415" text-anchor="middle" font-family="monospace" font-size="11" letter-spacing="3" fill="#ffb347">XVII</text>
+  </g>
+
+  <!-- center card: the sun -->
+  <g class="float">
+    <rect x="240" y="150" width="160" height="250" rx="14" fill="#ff7a1a" opacity=".7" filter="url(#soft)"/>
+    <rect x="240" y="150" width="160" height="250" rx="14" fill="url(#card)" stroke="url(#gold)" stroke-width="2.5"/>
+    <rect x="252" y="162" width="136" height="226" rx="9" fill="url(#grid)" stroke="#ff7a1a" stroke-opacity=".45"/>
+    <g stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round">
+      <path d="M320 208v-16M320 312v16M268 260h-16M372 260h16M283 223l-11-11M357 297l11 11M357 223l11-11M283 297l-11 11"/>
+    </g>
+    <circle cx="320" cy="260" r="30" fill="url(#gold)"/>
+    <circle cx="320" cy="260" r="20" fill="#0d0d0d"/>
+    <circle cx="320" cy="260" r="8" fill="url(#gold)"/>
+    <path d="M272 340h96" stroke="#ff7a1a" stroke-opacity=".7"/>
+    <path d="M290 350h60" stroke="#ff7a1a" stroke-opacity=".35"/>
+    <text x="320" y="375" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="4" fill="#ffb347">XIX</text>
+  </g>
+</svg>

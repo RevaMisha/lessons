@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Консультація таролога в Одесі — розклади на картах Таро</title>
+  <meta name="description" data-i18n-content="meta.description" content="Консультація таролога в Одесі та онлайн по Україні. Індивідуальні розклади Таро для важливих рішень, складних ситуацій і прогнозу можливих змін.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=115">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Таролог Марина — головна">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span class="logo__text"><b>MARINA</b><small>TAROT · ODESA</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Головна навігація">
+        <a href="#top" class="nav__link is-active" data-i18n="nav.home">Головна</a>
+        <a href="#" class="nav__link nav-placeholder" data-i18n="nav.taro">Розділ</a>
+        <a href="#" class="nav__link nav-placeholder" data-i18n="nav.astro">Розділ</a>
+        <a href="#" class="nav__link nav-placeholder" data-i18n="nav.proc">Розділ</a>
+      </nav>
+
+      <div class="header__right">
+        <a href="tel:+380930000000" class="header__phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span>+38 (093) 000-00-00</span>
+        </a>
+
+        <div class="lang" role="group" aria-label="Мова сайту">
+          <button class="lang__btn is-active" data-lang="uk" type="button">UA</button>
+          <button class="lang__btn" data-lang="ru" type="button">RU</button>
+        </div>
+
+        <button class="burger" id="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SIDE DRAWER (mobile) ===== -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__backdrop" data-drawer-close></div>
+    <aside class="drawer__panel">
+      <div class="drawer__head">
+        <span class="drawer__title" data-i18n="drawer.title">Меню</span>
+        <button class="drawer__close" type="button" data-drawer-close aria-label="Закрити меню">
+          <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="drawer__nav">
+        <a href="#top" data-drawer-close data-i18n="nav.home">Головна</a>
+        <a href="#" class="nav-placeholder" data-i18n="nav.taro">Розділ</a>
+        <a href="#" class="nav-placeholder" data-i18n="nav.astro">Розділ</a>
+        <a href="#" class="nav-placeholder" data-i18n="nav.proc">Розділ</a>
+      </nav>
+      <div class="drawer__foot">
+        <div class="drawer__socials">
+          <a href="viber://chat?number=%2B380930000000" aria-label="Viber" class="soc soc--viber"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.9 1.1C7.3.9 3.2 3.3 2.5 8.6c-.3 2.2-.3 4.4.2 6.6.4 1.6 1.2 3 2.6 4v3.4c0 .5.5.7.9.4l2.2-2c1.5.3 3 .4 4.5.3 5.6-.3 8.9-3.3 9.2-8.6.2-2.2 0-4.4-.7-6.5-1-3.1-3.9-4.9-8.5-5.1zm.3 2c3.9.2 6.1 1.6 7 4.1.5 1.6.7 3.4.5 5.3-.2 4.2-2.6 6.4-7.3 6.7-1.6.1-3.2 0-4.8-.4a.7.7 0 0 0-.6.2l-1.2 1.1v-1.9c0-.3-.2-.6-.5-.7-1.2-.6-1.9-1.7-2.2-3-.4-1.9-.4-3.9-.1-5.8.6-4.2 3.8-5.8 9.2-5.6zm-3.7 3.6c-.3 0-.5.1-.7.3-.6.5-1.3 1.3-1.2 2.2.1 1 .6 2 1.2 2.9 1.2 1.9 2.9 3.4 4.9 4.5.8.4 1.7.8 2.6.6.8-.2 1.5-.9 1.8-1.7.1-.3 0-.6-.3-.8l-1.9-1.3c-.3-.2-.7-.1-.9.1l-.7.8c-.2.2-.4.2-.6.1-1.4-.7-2.5-1.7-3.3-3-.1-.2-.1-.5.1-.6l.7-.7c.2-.2.3-.6.1-.9L10 7.1c-.1-.3-.3-.4-.5-.4zm2.7-.2c-.3 0-.5.2-.5.5s.2.5.5.5c2.1.1 3.7 1.7 3.8 3.8 0 .3.2.5.5.5s.5-.2.5-.5c-.1-2.6-2.2-4.7-4.8-4.8zm.1 1.8c-.3 0-.5.2-.5.5s.2.5.5.5c1.1 0 1.9.9 2 2 0 .3.2.5.5.5s.5-.3.5-.5c-.1-1.7-1.3-3-3-3z"/></svg></a>
+          <a href="https://t.me/username" aria-label="Telegram" class="soc soc--tg"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6 18.7 19.7c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13.2 1.2 11.7c-1.1-.3-1.1-1.1.2-1.6L20.5 2.7c.9-.3 1.7.2 1.4 1.9z"/></svg></a>
+          <a href="https://wa.me/380930000000" aria-label="WhatsApp" class="soc soc--wa"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.6.7.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 0 1 3.8 12c0-4.5 3.7-8.2 8.2-8.2s8.2 3.7 8.2 8.2-3.7 8.2-8.2 8.2z"/></svg></a>
+        </div>
+        <div class="lang lang--drawer">
+          <button class="lang__btn is-active" data-lang="uk" type="button">UA</button>
+          <button class="lang__btn" data-lang="ru" type="button">RU</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ===== FLOATING SOCIALS ===== -->
+  <div class="float-socials" id="floatSocials" aria-label="Швидкий зв'язок">
+    <a href="viber://chat?number=%2B380930000000" class="fsoc fsoc--viber" aria-label="Viber" data-tip="Viber">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.9 1.1C7.3.9 3.2 3.3 2.5 8.6c-.3 2.2-.3 4.4.2 6.6.4 1.6 1.2 3 2.6 4v3.4c0 .5.5.7.9.4l2.2-2c1.5.3 3 .4 4.5.3 5.6-.3 8.9-3.3 9.2-8.6.2-2.2 0-4.4-.7-6.5-1-3.1-3.9-4.9-8.5-5.1zm.3 2c3.9.2 6.1 1.6 7 4.1.5 1.6.7 3.4.5 5.3-.2 4.2-2.6 6.4-7.3 6.7-1.6.1-3.2 0-4.8-.4a.7.7 0 0 0-.6.2l-1.2 1.1v-1.9c0-.3-.2-.6-.5-.7-1.2-.6-1.9-1.7-2.2-3-.4-1.9-.4-3.9-.1-5.8.6-4.2 3.8-5.8 9.2-5.6zm-3.7 3.6c-.3 0-.5.1-.7.3-.6.5-1.3 1.3-1.2 2.2.1 1 .6 2 1.2 2.9 1.2 1.9 2.9 3.4 4.9 4.5.8.4 1.7.8 2.6.6.8-.2 1.5-.9 1.8-1.7.1-.3 0-.6-.3-.8l-1.9-1.3c-.3-.2-.7-.1-.9.1l-.7.8c-.2.2-.4.2-.6.1-1.4-.7-2.5-1.7-3.3-3-.1-.2-.1-.5.1-.6l.7-.7c.2-.2.3-.6.1-.9L10 7.1c-.1-.3-.3-.4-.5-.4zm2.7-.2c-.3 0-.5.2-.5.5s.2.5.5.5c2.1.1 3.7 1.7 3.8 3.8 0 .3.2.5.5.5s.5-.2.5-.5c-.1-2.6-2.2-4.7-4.8-4.8zm.1 1.8c-.3 0-.5.2-.5.5s.2.5.5.5c1.1 0 1.9.9 2 2 0 .3.2.5.5.5s.5-.3.5-.5c-.1-1.7-1.3-3-3-3z"/></svg>
+    </a>
+    <a href="https://t.me/username" class="fsoc fsoc--tg" aria-label="Telegram" data-tip="Telegram">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6 18.7 19.7c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13.2 1.2 11.7c-1.1-.3-1.1-1.1.2-1.6L20.5 2.7c.9-.3 1.7.2 1.4 1.9z"/></svg>
+    </a>
+    <a href="https://wa.me/380930000000" class="fsoc fsoc--wa" aria-label="WhatsApp" data-tip="WhatsApp">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.6.7.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 0 1 3.8 12c0-4.5 3.7-8.2 8.2-8.2s8.2 3.7 8.2 8.2-3.7 8.2-8.2 8.2z"/></svg>
+    </a>
+  </div>
+
+  <main id="top">
+
+    <!-- ===== BLOCK 1: HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__glow hero__glow--a"></div>
+      <div class="hero__glow hero__glow--b"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <div class="eyebrow reveal" data-i18n="hero.eyebrow">Одеса · онлайн по всій Україні</div>
+          <h1 class="hero__title reveal" data-i18n="hero.title">Консультація <span class="accent">таролога</span> Одеса</h1>
+          <p class="hero__lead reveal" data-i18n="hero.p1">Карти Таро — це чіткий інструмент аналізу та прогнозування, який допомагає розібратися у складній ситуації, розставити пріоритети й розгледіти майбутні перспективи.</p>
+          <p class="hero__desc reveal" data-i18n="hero.p2">Глибока діагностика на Таро дає змогу завчасно виявити приховані ризики, зрозуміти мотиви інших людей та обережно оминути підводні камені. Завдяки цьому ви перестаєте діяти наосліп, позбуваєтеся тривоги за завтрашній день і приймаєте виважені рішення з відчуттям повної впевненості.</p>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__card tilt">
+            <img src="img/hero-cards.svg" alt="Три карти Таро: Місяць, Сонце, Зірка" width="640" height="640" class="hero__img">
+            <div class="chip chip--a">
+              <span class="chip__dot"></span>
+              <span data-i18n="hero.chip1">Очно в Одесі та онлайн</span>
+            </div>
+            <div class="chip chip--b">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span data-i18n="hero.chip2">Відповідь у день звернення</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRACTICE STATISTICS ===== -->
+    <section class="section practice-stats" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <h2 class="h2 reveal" id="why-title" data-i18n="stats.title">Чому обирають <span class="accent">саме мене</span></h2>
+        <div class="practice-stats__inner reveal">
+          <div class="stat"><b data-count="100" data-suffix="%">100%</b><span data-i18n="stats.privacy">конфіденційність</span></div>
+          <div class="stat"><b data-count="20" data-prefix="+">+20</b><span data-i18n="stats.experience">років досвіду</span></div>
+          <div class="stat"><b data-count="1001">1001</b><span data-i18n="stats.clients">задоволених клієнтів</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOCK 2: WHEN ===== -->
+    <section class="section when" id="taro">
+      <div class="container when__inner">
+        <div class="when__text">
+          <h2 class="h2 reveal" data-i18n="when.title">Коли варто <span class="accent">звернутися до</span> карт Таро</h2>
+          <p class="reveal" data-i18n="when.p1">Іноді складно побачити ситуацію об'єктивно, особливо коли рішення стосується особистого життя, важливих змін або невизначеного майбутнього. У таких випадках розклад Таро допомагає зупинитися, подивитися на події ширше та краще зрозуміти, що відбувається зараз.</p>
+          <p class="reveal" data-i18n="when.p2">Такий розклад не просто відповідає на окреме питання, а допомагає краще зрозуміти саму ситуацію, її причини та можливі напрямки подальшого розвитку.</p>
+        </div>
+        <div class="when__list-wrap reveal">
+          <div class="when__list-glow"></div>
+          <div class="when__list-card">
+            <div class="when__list-head" data-i18n="when.listTitle">До консультації часто звертаються, коли:</div>
+            <ul class="when__list">
+              <li data-i18n="when.li1">потрібно прийняти важливе рішення;</li>
+              <li data-i18n="when.li2">складно зрозуміти причини подій, що повторюються;</li>
+              <li data-i18n="when.li3">є відчуття невизначеності або внутрішнього сумніву;</li>
+              <li data-i18n="when.li4">ситуація розвивається не так, як очікувалося;</li>
+              <li data-i18n="when.li5">попереду важливі зміни і хочеться краще до них підготуватися;</li>
+              <li data-i18n="when.li6">потрібно побачити можливі наслідки різних варіантів дій;</li>
+              <li data-i18n="when.li7">важко самостійно визначити, на що зараз варто звернути увагу.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- marquee: temporarily disabled
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span data-i18n="marquee">Кохання · Робота · Гроші · Сім'я · Прогноз · Розвиток ·&nbsp;</span>
+        <span data-i18n="marquee">Кохання · Робота · Гроші · Сім'я · Прогноз · Розвиток ·&nbsp;</span>
+        <span data-i18n="marquee">Кохання · Робота · Гроші · Сім'я · Прогноз · Розвиток ·&nbsp;</span>
+        <span data-i18n="marquee">Кохання · Робота · Гроші · Сім'я · Прогноз · Розвиток ·&nbsp;</span>
+      </div>
+    </div>
+    -->
+
+    <!-- ===== BLOCK 3: DIRECTIONS ===== -->
+    <section class="section directions" id="directions">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2 reveal" data-i18n="dir.title"><span class="line">З якими темами часто</span> <span class="line">звертаються до <span class="accent">Таро</span></span></h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal tilt">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            </div>
+            <h3 class="card__title" data-i18n="dir.c1t">Кохання та стосунки</h3>
+            <p class="card__text" data-i18n="dir.c1p">Що насправді відчуває партнер, куди рухаються ваші взаємини, як розплутати конфлікт, чи є перспектива примирення та чого чекати від нових знайомств.</p>
+          </article>
+
+          <article class="card reveal tilt">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16M2 12h20"/></svg>
+            </div>
+            <h3 class="card__title" data-i18n="dir.c2t">Робота та кар'єра</h3>
+            <p class="card__text" data-i18n="dir.c2p">Чи варто змінювати роботу саме зараз, що принесе нова пропозиція, як розвивати власний бізнес та де шукати професійну реалізацію.</p>
+          </article>
+
+          <article class="card reveal tilt">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.1 9.9A6 6 0 1 1 9.9 18.1M7 6h1v4M16.7 13.5l.9.2-1 3.9"/></svg>
+            </div>
+            <h3 class="card__title" data-i18n="dir.c3t">Гроші та ресурси</h3>
+            <p class="card__text" data-i18n="dir.c3p">Чому виник застій у доходах, як вийти з фінансової ями, де приховані нові можливості для заробітку та яку грошову стратегію обрати.</p>
+          </article>
+
+          <article class="card reveal tilt">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 21v-6h6v6"/></svg>
+            </div>
+            <h3 class="card__title" data-i18n="dir.c4t">Сім'ю та близькі</h3>
+            <p class="card__text" data-i18n="dir.c4p">Як знайти спільну мову з рідними, владнати затяжні суперечки, налагодити контакт із дітьми та повернути спокій у дім.</p>
+          </article>
+
+          <article class="card reveal tilt">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="11" r="7"/><path d="M8 21h8M10 18l-1 3M14 18l1 3M9 9a3 3 0 0 1 3-3"/></svg>
+            </div>
+            <h3 class="card__title" data-i18n="dir.c5t">Прогноз на майбутне</h3>
+            <p class="card__text" data-i18n="dir.c5p">Чого чекати у найближчий місяць або конкретний період, до яких подій варто підготуватися заздалегідь та як не упустити свій шанс.</p>
+          </article>
+
+          <article class="card reveal tilt">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12M12 12c0-4 3-7 8-7-1 5-4 7-8 7zM12 15c0-3-2.5-5.5-7-5.5.8 4 3.5 5.5 7 5.5z"/></svg>
+            </div>
+            <h3 class="card__title" data-i18n="dir.c6t">Особистісний розвиток</h3>
+            <p class="card__text" data-i18n="dir.c6p">Що гальмує ваш рух уперед, які страхи й переконання заважають рости та на чому зосередити увагу, щоб змінити життя на краще.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOCK 4: PROCESS ===== -->
+    <section class="section process" id="process">
+      <div class="process__glow"></div>
+      <div class="container">
+        <div class="section-head section-head--center">
+          <h2 class="h2 reveal" data-i18n="proc.title"><span class="line">Як проходить</span> <span class="line">консультація <span class="accent">таролога</span></span></h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step__num"><span>01</span></div>
+            <div class="step__body">
+              <h3 class="step__title" data-i18n="proc.s1t">Ви описуєте ситуацію</h3>
+              <p class="step__text" data-i18n="proc.s1p">Коротко розповідаєте, що сталося та який момент викликає найбільше тривоги чи запитань.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step__num"><span>02</span></div>
+            <div class="step__body">
+              <h3 class="step__title" data-i18n="proc.s2t">Формулюємо питання</h3>
+              <p class="step__text" data-i18n="proc.s2p">Разом визначаємо основні питання, щоб розклад був конкретним і відповідав вашій ситуації.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step__num"><span>03</span></div>
+            <div class="step__body">
+              <h3 class="step__title" data-i18n="proc.s3t">Роблю розклад</h3>
+              <p class="step__text" data-i18n="proc.s3p">Підбираю відповідний формат розкладу та працюю з картами Таро відповідно до вашого запиту.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step__num"><span>04</span></div>
+            <div class="step__body">
+              <h3 class="step__title" data-i18n="proc.s4t">Отримуєте пояснення</h3>
+              <p class="step__text" data-i18n="proc.s4p">Пояснюю значення карт, їхній взаємозв'язок та можливі сценарії розвитку ситуації.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== BLOCK 4b: BENEFITS ===== -->
+    <section class="section benefits" id="benefits">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <h2 class="h2 reveal" data-i18n="ben.title">При <span class="accent">зверненні</span> ви отримуєте</h2>
+        </div>
+        <div class="benefits__row reveal">
+          <div class="benefits__line"><i></i></div>
+          <div class="benefit">
+            <div class="benefit__icon">
+              <svg class="benefit__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/><rect class="benefit__fill" x="5" y="10.5" width="14" height="10" rx="3"/><circle class="benefit__dot" cx="12" cy="14.6" r="1.25"/><path d="M12 15.9v1.9"/></svg>
+            </div>
+            <div class="benefit__title" data-i18n="ben.b1">Конфіденційність</div>
+          </div>
+          <div class="benefit">
+            <div class="benefit__icon">
+              <svg class="benefit__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="benefit__fill" d="M11 3.5c.6 4 2.5 5.9 6.5 6.5-4 .6-5.9 2.5-6.5 6.5-.6-4-2.5-5.9-6.5-6.5 4-.6 5.9-2.5 6.5-6.5z"/><path d="M18 14.5c.3 1.7 1 2.4 2.7 2.7-1.7.3-2.4 1-2.7 2.7-.3-1.7-1-2.4-2.7-2.7 1.7-.3 2.4-1 2.7-2.7z"/><path class="benefit__dot" stroke="none" d="M18.5 3.2c.15.9.5 1.25 1.4 1.4-.9.15-1.25.5-1.4 1.4-.15-.9-.5-1.25-1.4-1.4.9-.15 1.25-.5 1.4-1.4z"/></svg>
+            </div>
+            <div class="benefit__title" data-i18n="ben.b2">Індивідуальний розклад</div>
+          </div>
+          <div class="benefit">
+            <div class="benefit__icon">
+              <svg class="benefit__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect class="benefit__fill" x="9" y="2.75" width="6" height="11.5" rx="3"/><path d="M10.9 6.6h2.2M10.9 9.1h2.2"/><path d="M5.75 11a6.25 6.25 0 0 0 12.5 0"/><path d="M12 17.25v3.5M9.25 20.75h5.5"/></svg>
+            </div>
+            <div class="benefit__title" data-i18n="ben.b3">Глибоке трактування</div>
+          </div>
+          <div class="benefit">
+            <div class="benefit__icon">
+              <svg class="benefit__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="benefit__fill" d="M20 11.5c0 4.1-3.6 7.5-8 7.5-1.2 0-2.4-.25-3.4-.7L4.25 19.75l1.2-3.7A7.1 7.1 0 0 1 4 11.5C4 7.4 7.6 4 12 4s8 3.4 8 7.5z"/><circle class="benefit__dot" cx="8.6" cy="11.5" r="1"/><circle class="benefit__dot" cx="12" cy="11.5" r="1"/><circle class="benefit__dot" cx="15.4" cy="11.5" r="1"/></svg>
+            </div>
+            <div class="benefit__title" data-i18n="ben.b4">Зрозуміле пояснення</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOCK 5: ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="about__glow"></div>
+      <div class="container about__inner">
+        <div class="about__visual reveal">
+          <div class="about__frame tilt">
+            <picture class="about__picture">
+              <source media="(max-width: 1100px)" srcset="img/marina-wide.svg?v=2" width="960" height="600">
+              <img src="img/marina.svg?v=2" alt="Марина — таролог з понад 20-річним досвідом" width="480" height="600" class="about__img">
+            </picture>
+            <div class="about__badge">
+              <b>20+</b>
+              <span data-i18n="about.badge">років з картами Таро</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__text">
+          <h2 class="h2 reveal" data-i18n="about.title"><span class="line">Таролог</span> <span class="line">Марина</span></h2>
+          <p class="reveal" data-i18n="about.p1">Мене звати Марина. Понад 20 років я працюю з картами Таро як з інструментом передбачення, аналізу життєвих ситуацій та пошуку можливих сценаріїв розвитку подій.</p>
+          <p class="reveal" data-i18n="about.p2">За роки практики я мала справу з різними запитами — від особистих стосунків і сімейних питань до роботи, фінансів, складного вибору та періодів великих змін.</p>
+          <p class="reveal" data-i18n="about.p3">Під час консультації моя задача — не просто озвучити значення карт, а допомогти вам краще зрозуміти свою ситуацію, побачити важливі деталі та можливі наслідки різних рішень.</p>
+          <p class="reveal" data-i18n="about.p4">Я працюю спокійно, без залякувань і категоричних «вироків». Ви отримуєте зрозуміле трактування, індивідуальний підхід і повну конфіденційність.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOCK 6: FORMATS ===== -->
+    <section class="section formats" id="formats">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2 reveal" data-i18n="fmt.title">Формати <span class="accent">консультації</span></h2>
+        </div>
+        <div class="formats__grid">
+          <article class="format reveal tilt">
+            <div class="format__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+            <div class="format__body">
+              <div class="format__heading">
+                <h3 class="format__title" data-i18n="fmt.f1t">Очна консультація таролога</h3>
+                <div class="format__tag" data-i18n="fmt.f1tag">Одеса</div>
+              </div>
+              <p class="format__text" data-i18n="fmt.f1p">Особиста зустріч та проведення розкладу наживо. Ви можете детально описати ситуацію, поставити додаткові питання та отримати трактування карт безпосередньо під час консультації.</p>
+              <a href="https://t.me/username" class="btn btn--small btn--primary" data-i18n="fmt.f1btn">Написати в Telegram</a>
+            </div>
+            
+          </article>
+
+          <article class="format reveal tilt">
+            <div class="format__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4M6 12l3-3 3 3 4-4"/></svg>
+            </div>
+            <div class="format__body">
+              <div class="format__heading">
+                <h3 class="format__title" data-i18n="fmt.f2t">Онлайн-консультація таролога</h3>
+                <div class="format__tag" data-i18n="fmt.f2tag">Вся Україна</div>
+              </div>
+              <p class="format__text" data-i18n="fmt.f2p">Консультацію можна пройти дистанційно незалежно від вашого міста або країни. Ви описуєте ситуацію та формулюєте питання, після чого проводиться розклад і надається його детальне трактування.</p>
+              <a href="https://t.me/username" class="btn btn--small btn--ghost" data-i18n="fmt.f2btn">Написати в Telegram</a>
+            </div>
+            
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOCK 7: FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="container faq__inner">
+        <div class="faq__head">
+          <h2 class="h2 reveal" data-i18n="faq.title"><span class="line">Часті</span> <span class="line accent">питання</span> <span class="line">про таро</span></h2>
+          <p class="faq__hint reveal" data-i18n="faq.hint">Короткі пояснення допоможуть краще зрозуміти, як проходить консультація, чого очікувати від розкладу та які моменти варто врахувати заздалегідь.</p>
+        </div>
+        <div class="accordion reveal">
+          <div class="acc">
+            <button class="acc__btn" type="button" aria-expanded="false">
+              <h3 class="acc__title" data-i18n="faq.q1">Наскільки точно карти Таро передбачають майбутнє?</h3>
+              <span class="acc__plus"></span>
+            </button>
+            <div class="acc__panel"><p data-i18n="faq.a1">Розклад показує можливий розвиток ситуації відповідно до обставин, які існують на момент консультації. Рішення людини та нові події можуть змінювати подальший сценарій, тому Таро краще використовувати як інструмент прогнозування та аналізу можливих варіантів розвитку подій.</p></div>
+            </div>
+          <div class="acc">
+            <button class="acc__btn" type="button" aria-expanded="false">
+              <h3 class="acc__title" data-i18n="faq.q2">На який період можна зробити прогноз Таро?</h3>
+              <span class="acc__plus"></span>
+            </button>
+            <div class="acc__panel"><p data-i18n="faq.a2">Період залежить від самого питання. Це може бути найближчий місяць, декілька місяців або конкретний етап життя. Чим точніше визначений період, тим конкретніше можна побудувати розклад.</p></div>
+          </div>
+          <div class="acc">
+            <button class="acc__btn" type="button" aria-expanded="false">
+              <h3 class="acc__title" data-i18n="faq.q3">Чи можна ставити Таро питання, на які потрібна відповідь «так» або «ні»?</h3>
+              <span class="acc__plus"></span>
+            </button>
+            <div class="acc__panel"><p data-i18n="faq.a3">Можна, але більш корисними зазвичай є відкриті питання. Замість простого «Чи варто мені змінювати роботу?» краще розглянути, що може дати зміна роботи, які труднощі можливі та що варто врахувати перед рішенням.</p></div>
+          </div>
+          <div class="acc">
+            <button class="acc__btn" type="button" aria-expanded="false">
+              <h3 class="acc__title" data-i18n="faq.q4">Чи можна зробити декілька розкладів на різні теми за одну консультацію?</h3>
+              <span class="acc__plus"></span>
+            </button>
+            <div class="acc__panel"><p data-i18n="faq.a4">Так, якщо питання пов'язані між собою або формат консультації дозволяє розглянути декілька тем. Якщо запитів багато, краще визначити найважливіші, щоб кожен із них можна було розглянути достатньо детально.</p></div>
+          </div>
+          <div class="acc">
+            <button class="acc__btn" type="button" aria-expanded="false">
+              <h3 class="acc__title" data-i18n="faq.q5">Як дізнатися точну вартість розкладу?</h3>
+              <span class="acc__plus"></span>
+            </button>
+            <div class="acc__panel"><p data-i18n="faq.a5">Вартість формується залежно від складності та деталізації вашого запиту (від короткого розкладу на один делікатний момент до повної годинної консультації). Ви можете описати вашу ситуацію в повідомленні, і я запропоную оптимальний формат та назву точну ціну до початку роботи.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="container back-to-top">
+          <a href="#top" class="footer__up" aria-label="Нагору">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          </a>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__box">
+        <div class="footer__glow"></div>
+        <div class="footer__grid">
+          <div class="footer__col">
+            <a href="#top" class="logo">
+              <img src="img/logo.svg" alt="" width="40" height="40">
+              <span class="logo__text"><b>MARINA</b><small>TAROT · ODESA</small></span>
+            </a>
+            <p class="footer__desc" data-i18n="foot.desc">Консультації таролога в Одесі та онлайн по Україні. Індивідуальні розклади Таро для важливих рішень, складних ситуацій і прогнозу можливих змін.</p>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__label footer__label--center" data-i18n="foot.socLabel">Соціальні мережі</div>
+            <div class="footer__socials">
+              <a href="viber://chat?number=%2B380930000000" class="fbox" aria-label="Viber">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.9 1.1C7.3.9 3.2 3.3 2.5 8.6c-.3 2.2-.3 4.4.2 6.6.4 1.6 1.2 3 2.6 4v3.4c0 .5.5.7.9.4l2.2-2c1.5.3 3 .4 4.5.3 5.6-.3 8.9-3.3 9.2-8.6.2-2.2 0-4.4-.7-6.5-1-3.1-3.9-4.9-8.5-5.1zm.3 2c3.9.2 6.1 1.6 7 4.1.5 1.6.7 3.4.5 5.3-.2 4.2-2.6 6.4-7.3 6.7-1.6.1-3.2 0-4.8-.4a.7.7 0 0 0-.6.2l-1.2 1.1v-1.9c0-.3-.2-.6-.5-.7-1.2-.6-1.9-1.7-2.2-3-.4-1.9-.4-3.9-.1-5.8.6-4.2 3.8-5.8 9.2-5.6zm-3.7 3.6c-.3 0-.5.1-.7.3-.6.5-1.3 1.3-1.2 2.2.1 1 .6 2 1.2 2.9 1.2 1.9 2.9 3.4 4.9 4.5.8.4 1.7.8 2.6.6.8-.2 1.5-.9 1.8-1.7.1-.3 0-.6-.3-.8l-1.9-1.3c-.3-.2-.7-.1-.9.1l-.7.8c-.2.2-.4.2-.6.1-1.4-.7-2.5-1.7-3.3-3-.1-.2-.1-.5.1-.6l.7-.7c.2-.2.3-.6.1-.9L10 7.1c-.1-.3-.3-.4-.5-.4zm2.7-.2c-.3 0-.5.2-.5.5s.2.5.5.5c2.1.1 3.7 1.7 3.8 3.8 0 .3.2.5.5.5s.5-.2.5-.5c-.1-2.6-2.2-4.7-4.8-4.8zm.1 1.8c-.3 0-.5.2-.5.5s.2.5.5.5c1.1 0 1.9.9 2 2 0 .3.2.5.5.5s.5-.3.5-.5c-.1-1.7-1.3-3-3-3z"/></svg>
+                <span>Viber</span>
+              </a>
+              <a href="https://t.me/username" class="fbox" aria-label="Telegram">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6 18.7 19.7c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13.2 1.2 11.7c-1.1-.3-1.1-1.1.2-1.6L20.5 2.7c.9-.3 1.7.2 1.4 1.9z"/></svg>
+                <span>Telegram</span>
+              </a>
+              <a href="https://wa.me/380930000000" class="fbox" aria-label="WhatsApp">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.6.7.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 0 1 3.8 12c0-4.5 3.7-8.2 8.2-8.2s8.2 3.7 8.2 8.2-3.7 8.2-8.2 8.2z"/></svg>
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://facebook.com/username" class="fbox" aria-label="Facebook">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.3c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.3v2.3H7.4V14h2.8v8z"/></svg>
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__label footer__label--center" data-i18n="foot.contactLabel">Контакти</div>
+            <a href="mailto:marina.tarot@gmail.com" class="footer__contact">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+              <span>marina.tarot@gmail.com</span>
+            </a>
+            <a href="tel:+380930000000" class="footer__contact">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              <span>+38 (093) 000-00-00</span>
+            </a>
+            <div class="footer__contact footer__contact--static">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="foot.city">Одеса і весь світ</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span data-i18n="foot.copy">© 2026 <span class="accent">ZverinaLev production</span>. Усі права захищені.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=85"></script>
+</body>
+</html>

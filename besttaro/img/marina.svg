@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" width="480" height="600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1208"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="38%" r="45%">
+      <stop offset="0" stop-color="#ff7a1a" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#ff7a1a"/>
+    </linearGradient>
+    <linearGradient id="cloak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2a2a"/>
+      <stop offset="1" stop-color="#0c0c0c"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2a1c"/>
+      <stop offset="1" stop-color="#140d07"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0c9a6"/>
+      <stop offset="1" stop-color="#cfa079"/>
+    </linearGradient>
+    <filter id="blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
+    <style>
+      .flame{transform-origin:center bottom;animation:fm 1.6s ease-in-out infinite alternate}
+      .flame.b{animation-delay:-.8s}
+      @keyframes fm{from{transform:scaleY(1) scaleX(1)}to{transform:scaleY(1.18) scaleX(.9)}}
+      .card{animation:hv 5s ease-in-out infinite}
+      @keyframes hv{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    </style>
+  </defs>
+
+  <rect width="480" height="600" rx="24" fill="url(#bg)"/>
+  <rect width="480" height="600" rx="24" fill="url(#halo)"/>
+
+  <!-- ornamental frame -->
+  <rect x="18" y="18" width="444" height="564" rx="16" stroke="#ff7a1a" stroke-opacity=".35"/>
+  <rect x="26" y="26" width="428" height="548" rx="12" stroke="#ff7a1a" stroke-opacity=".15"/>
+  <g fill="#ff7a1a">
+    <path d="M26 26h22v3H29v19h-3zM454 26v22h-3V29h-19v-3zM26 574v-22h3v19h19v3zM454 574h-22v-3h19v-19h3z"/>
+  </g>
+
+  <!-- crescent moon behind -->
+  <path d="M310 118a86 86 0 1 0 0 172 68 68 0 1 1 0-172z" fill="url(#gold)" opacity=".9"/>
+  <circle cx="150" cy="120" r="2" fill="#fff"/><circle cx="120" cy="170" r="1.5" fill="#fff"/><circle cx="400" cy="90" r="1.6" fill="#fff"/><circle cx="80" cy="260" r="1.4" fill="#fff"/>
+
+  <!-- hair back -->
+  <path d="M150 300c-12-80 20-140 90-140s102 60 90 140c12 60 10 120 0 190H150c-10-70-12-130 0-190z" fill="url(#hair)"/>
+
+  <!-- body / cloak -->
+  <path d="M60 600c0-140 60-210 180-210s180 70 180 210z" fill="url(#cloak)"/>
+  <path d="M240 390c-20 60-30 120-30 210h60c0-90-10-150-30-210z" fill="#161616"/>
+  <path d="M120 600c10-90 40-150 120-150s110 60 120 150" stroke="#ff7a1a" stroke-opacity=".25"/>
+
+  <!-- neck & face -->
+  <path d="M212 330h56v70c-10 18-46 18-56 0z" fill="#d9ab84"/>
+  <ellipse cx="240" cy="270" rx="58" ry="74" fill="url(#skin)"/>
+  <!-- hair front -->
+  <path d="M182 260c0-70 30-105 58-105s58 35 58 105c-10-40-28-60-58-60s-48 20-58 60z" fill="url(#hair)"/>
+  <path d="M182 262c-4 40-2 90 8 130-14-30-22-90-8-130z" fill="url(#hair)"/>
+  <path d="M298 262c4 40 2 90-8 130 14-30 22-90 8-130z" fill="url(#hair)"/>
+  <!-- closed eyes, calm -->
+  <path d="M212 272q12 8 24 0M244 272q12 8 24 0" stroke="#3a2416" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M210 262q14-10 28-2M242 260q14-8 28 2" stroke="#3a2416" stroke-width="1.8" stroke-linecap="round" opacity=".7"/>
+  <path d="M240 282v14l-6 3" stroke="#b07f5a" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M226 314q14 8 28 0" stroke="#b5553c" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- earring -->
+  <circle cx="300" cy="300" r="3" fill="url(#gold)"/><path d="M300 303v10" stroke="url(#gold)"/>
+  <!-- pendant -->
+  <path d="M212 398q28 22 56 0" stroke="url(#gold)" stroke-width="1.5"/>
+  <path d="M240 414l6 9-6 9-6-9z" fill="url(#gold)"/>
+
+  <!-- hands with a card -->
+  <g class="card">
+    <rect x="200" y="480" width="80" height="120" rx="8" fill="#ff7a1a" opacity=".6" filter="url(#blur)"/>
+    <rect x="200" y="470" width="80" height="118" rx="8" fill="#141414" stroke="url(#gold)" stroke-width="2"/>
+    <rect x="208" y="478" width="64" height="102" rx="5" stroke="#ff7a1a" stroke-opacity=".4"/>
+    <path d="M240 496l6 16 16 6-16 6-6 16-6-16-16-6 16-6z" fill="url(#gold)"/>
+    <path d="M222 552h36M228 560h24" stroke="#ff7a1a" stroke-opacity=".6"/>
+  </g>
+  <path d="M150 560c10-30 40-40 70-30 8 10 12 30 8 50H150z" fill="#e2b892"/>
+  <path d="M330 560c-10-30-40-40-70-30-8 10-12 30-8 50h78z" fill="#e2b892"/>
+  <path d="M160 560c10-18 30-24 50-18M320 560c-10-18-30-24-50-18" stroke="#b07f5a" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- candles -->
+  <g>
+    <rect x="70" y="440" width="22" height="90" rx="4" fill="#1e1e1e" stroke="#ff7a1a" stroke-opacity=".3"/>
+    <ellipse class="flame" cx="81" cy="426" rx="6" ry="14" fill="url(#gold)"/>
+    <ellipse cx="81" cy="430" rx="2.5" ry="6" fill="#fff4d6"/>
+    <rect x="388" y="460" width="22" height="70" rx="4" fill="#1e1e1e" stroke="#ff7a1a" stroke-opacity=".3"/>
+    <ellipse class="flame b" cx="399" cy="446" rx="6" ry="14" fill="url(#gold)"/>
+    <ellipse cx="399" cy="450" rx="2.5" ry="6" fill="#fff4d6"/>
+  </g>
+</svg>
